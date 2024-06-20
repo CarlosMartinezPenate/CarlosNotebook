@@ -1,3 +1,3 @@
 This is my CV
 
-You can find me on Linkedin: www.linkedin.com/in/camartinezpe
+You can find me on Linkedin: (https:\\www.linkedin.com/in/camartinezpe)
