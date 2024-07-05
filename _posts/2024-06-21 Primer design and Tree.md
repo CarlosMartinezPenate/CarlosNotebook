@@ -1,3 +1,10 @@
+---
+layout: post
+title: Primer Design
+date: '2024-06-21'
+categories: Protocols
+tags: Rna
+---
 # Primer Design Protocol for Amplifying the NidA Encoding Gene
 
 ## 1. Identify the Target Gene Sequence
