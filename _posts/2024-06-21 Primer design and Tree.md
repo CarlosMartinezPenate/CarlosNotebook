@@ -27,6 +27,12 @@ Use a primer design tool to create primers specific to the target region. Tools:
 - Avoid secondary structures like hairpins, self-dimers, or cross-dimers
 - Ensure primers bind specifically to the target sequence
 
+##Primers:
+![primers](/Users/carlosmartinez/Documents/GitHub/CarlosNotebook/images/Screenshot 2024-07-05 at 5.04.10 PM.png)
+
+Sequence: 5' CGATCGGTGATTCGTTTGCC 3'
+
+
 
 # Creating a Phylogenetic Tree Using MEGA
 
@@ -50,6 +56,10 @@ Use a primer design tool to create primers specific to the target region. Tools:
 - Choose the appropriate substitution model
 - Select the options for bootstrapping (e.g., 1000 replicates) to assess the robustness of the tree.
 - Generate the tree and view the phylogeny.
+
+##Generated Tree:
+
+![Tree](/Users/carlosmartinez/Documents/GitHub/CarlosNotebook/images/phylo_tree NidA30100.tree.png)
 
 ## 5. Analyze and Interpret the Phylogenetic Tree
 - Examine the tree for clades and evolutionary relationships among the sequences.
