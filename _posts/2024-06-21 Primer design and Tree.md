@@ -59,7 +59,7 @@ Sequence: 5' CGATCGGTGATTCGTTTGCC 3'
 
 ##Generated Tree:
 
-![Tree](/Users/carlosmartinez/Documents/GitHub/CarlosNotebook/images/phylo_tree NidA30100.tree.png)
+![Tree](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/images/phylo_tree%20NidA30100.tree.png)
 
 ## 5. Analyze and Interpret the Phylogenetic Tree
 - Examine the tree for clades and evolutionary relationships among the sequences.
