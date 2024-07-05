@@ -28,7 +28,7 @@ Use a primer design tool to create primers specific to the target region. Tools:
 - Ensure primers bind specifically to the target sequence
 
 ##Primers:
-![primers](/Users/carlosmartinez/Documents/GitHub/CarlosNotebook/images/Screenshot 2024-07-05 at 5.04.10 PM.png)
+![primers](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/images/Screenshot%202024-07-05%20at%205.04.10%E2%80%AFPM.png)
 
 Sequence: 5' CGATCGGTGATTCGTTTGCC 3'
 
