@@ -33,15 +33,5 @@ tags: qPCR
    - **Max Tm Difference:** Set a maximum Tm difference to avoid inefficient amplification.
 
 7. **Primer3 Output:**
-   Click on the "Pick Primers" button to generate primer pairs meeting the specified criteria.
+  $(NidA primers for qPCR)[https://github.com/DieGrungeDie/CarlosNotebook/blob/main/images/NidAprimers.png]
 
-8. **Evaluate Primer Pairs:**
-   Evaluate the suggested primer pairs based on parameters like Tm, GC content, and specificity.
-
-9. **Select Primers:**
-   Choose primer pairs that are suitable for qPCR amplification of the NidA gene sequence.
-
-10. **Order Primers:**
-    Once you have selected appropriate primer pairs, you can use the provided sequences to order primers from a supplier for your qPCR experiments.
-
-Ensure to validate the primer pairs through in silico analysis and experimental validation before proceeding with qPCR experiments. This process ensures that the primers amplify the NidA gene efficiently and specifically in your experimental conditions.
