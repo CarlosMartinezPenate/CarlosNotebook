@@ -23,7 +23,7 @@ tags: RNALater
 2. Put the cap on the reservoir.
 3. Cleaned the top with an alcohol pad.
 4. Placed the filter in with tweezers.
-5. With a syringe attached, injected RNALater from the exit of the 25-way valve until RNALater would flood the port connected to the filter holder.
+5. With a syringe attached, inject RNALater from the exit of the 25-way valve until RNALater floods the port connected to the filter holder.
 6. Moved the 25-way valve to the next port and repeated the procedure.
 7. Intercalated RNALater and DDW until port 5.
 8. **Confused RNALater with DDW at port 5 and continued until port 9.**
@@ -40,7 +40,7 @@ tags: RNALater
 
 ### Observations:
 1. **Filter holders on ports 5, 6, 7, 8, and 9 were opened, cleaned, and primed again with the correct fixative according to the experiment design.**
-2. As noted in the 1st observation, filter holders on ports 5, 6, 7, 8, and 9 were reprocessed to be primed with the correct fixative. Previous observations had noticed that at deployment, when the 25-port valve moves from port to port, **there might be cross-contaminations between ports**. To get an idea of the extent this might be happening, when filter holders 5, 6, 7, 8, and 9 were removed, a few drops of the liquid inside the hose and inside the filter holder were inspected with a refractometer, giving these results:
+2. As noted in the 1st observation, filter holders on ports 5, 6, 7, 8, and 9 were reprocessed to be primed with the correct fixative. Previous observations had noticed that at deployment when the 25-port valve moves from port to port, **there might be cross-contaminations between ports**. To get an idea of the extent this might be happening, when filter holders 5, 6, 7, 8, and 9 were removed, a few drops of the liquid inside the hose and inside the filter holder were inspected with a refractometer, giving these results:
    - Port 6: Refraction in Hose = 0%; Refraction Inside Filter Holder = 0%.
    - Port 7: Refraction in Hose = 25%; Refraction Inside Filter Holder > 30%.
    - Port 8: Refraction in Hose = 1%; Refraction Inside Filter Holder = 0%.
@@ -53,12 +53,12 @@ tags: RNALater
    - 15 minutes between each sample.
 5. Because no anti-fouler was going to be in use, it was disconnected from the 25-port valve and a plugged hose was instead placed in port 24 input.
 6. Pumping began at 1:38 pm.
-7. As soon as Port number 2 ended the sampling cycle, Filter Holder 1 and Filter Holder 2 were removed from the PPS and processed in the Filter Retrieval Protocol. However, because the filter holders were removed and the ports not plugged, when the 25-way valve moved to home port the PPS lost priming, **hindering its capacity to filter** on port numbers 3, 4, and 5. At this point, the deployment was interrupted and the ports were plugged. **The filtering process was resumed manually at 15:00 pm**, following the same steps as the programmed deployment **except for** the time between samples: new samples were taken immediately as the sampling cycle ended for the previous sample.
-8. Sampling was observed to be acceptable during the filtration in Port number 11. However, in some ports, the filter was slow or air would seep through at some point:
+7. As soon as Port number 2 ended the sampling cycle, Filter Holder 1 and Filter Holder 2 were removed from the PPS and processed in the Filter Retrieval Protocol. However, because the filter holders were removed and the ports not plugged, when the 25-way valve moved to the home port the PPS lost priming, **hindering its capacity to filter** on port numbers 3, 4, and 5. At this point, the deployment was interrupted and the ports were plugged, deployment was followed until port 7, and noticing the lack of filtration, the deployment process was stopped at port 7 following the same steps as the programmed deployment **except for** the time between samples: new samples were taken immediately as the sampling cycle ended for the previous sample. **The filtering process was resumed manually at 15:00, the 25-way valve was regressed to Port number 3 to repeat the filtering process, and data logging was resumed when the valve reached Port 10**
+8. Sampling was acceptable during the filtration **only when the valve reached Port number 11.** However, in some ports, the filter was slow or air would seep through at some point:
    - Port 11: No problems.
    - Port 12: No problems.
    - Port 13: No problems.
-**At this point the output hose of the PPS was moved to a different reservoir as the water inside the 200L reservorir felt "soapy"** 
+**At this point the output hose of the PPS was moved to a different reservoir as the water inside the 200L reservoir felt "soapy"** 
    - Port 14: No problems.
    - Port 15: No problems.
    - Port 16: Partial filtration (stopped at 700 ml of sample).
@@ -69,7 +69,7 @@ tags: RNALater
    - Port 21: No problems.
    - Port 22: Air in the line.
    - Port 23: No recorded observation.
-9. **Filtration of the 23 filters was finished at 19:23 **.
+9. **Filtration of the 23 filters was finished at 19:23**.
 10. **Filters 1,2,9,10 and 17,18 were retrieved, fixed with 20 ml of RNALater, and frozen at minus 80 degrees at MCE lab around 20:57**
 11. Deployment data can be found here: [Manual Data](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/Data/expt1.txt), and here: [Deployment Data](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/Data/expt1memorydump.txt)
 
