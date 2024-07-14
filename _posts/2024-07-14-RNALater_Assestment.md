@@ -1,4 +1,11 @@
-# Lab Notebook
+---
+layout: post
+title: RNALater Assestment
+date: '2024-07-14'
+categories: Experiments
+tags: RNALater
+---
+# Carlos MCELab Notebook
 
 ## Date: Jun 2
 
