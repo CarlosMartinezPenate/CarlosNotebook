@@ -64,6 +64,7 @@
    - Port 23: No recorded observation.
 9. **Filtration of the 23 filters was finished at 19:23 **.
 10. **Filters 1,2,9,10 and 17,18 were retrieved, fixed with 20 ml of RNALater, and frozen at minus 80 degrees at MCE lab around 20:57**
+11. Deployment data can be found here: [Manual Data](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/Data/expt1.txt), and here: [Deployment Data](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/Data/expt1memorydump.txt)
 
 
 ---
@@ -127,4 +128,4 @@
 	- Filter 2 = 58.5 nanograms RNA / microliter.
 	- Filter 11 = 24.7 nanograms RNA / microliter.
 	- Filter 12 = 53.5 nanograms RNA / microliter.
-2. TapeStation results can be found on: [Tapestation Results](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/Data/Tapestation%202024-07-02-01%20copy.pdf)
+2. TapeStation results can be found on: [Tapestation Results](Data/Tapestation 2024-07-02-01 copy.pdf)
