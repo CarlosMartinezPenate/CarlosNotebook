@@ -5,11 +5,11 @@ date: '2024-07-17'
 categories: Homeworks
 tags: R
 ---
-#Data Analysis of Photosurvey
-##Objective
+# Data Analysis of Photosurvey
+## Objective
 The objective of this analysis is to explore and understand the variation in algae coverage across different sites, seasons, depths, and years. The data was processed using R, and various statistical analyses were conducted to determine the significance of these factors.
 
-###Data Loading and Structure
+### Data Loading and Structure
 First, the necessary libraries were loaded, and the working directory was set. The dataset Photosurvey.csv, the data set was obtained from a previous class exercise. was then read into R and its structure was examined:
 
 ~~~R
@@ -30,7 +30,7 @@ str(Photosurvey)
 ~~~
 The dataset contains 340 observations and 23 variables, including Year, site, depth, season, Algae, Bryozoa, and live_coverage.
 
-###Data Exploration
+### Data Exploration
 Summary of Live Coverage by Site and Season
 A summary of live coverage by site and season was calculated:
 
@@ -52,8 +52,8 @@ The results showed:
 |SdotYam|	Fall	|62.0|
 |SdotYam	|Spring|	67.9|
 
-###Statistical Analysis
-####Two-Way ANOVA for Algae by Site and Season
+### Statistical Analysis
+#### Two-Way ANOVA for Algae by Site and Season
 A two-way ANOVA was conducted to examine the effects of site and season on algae coverage:
 
 ~~~R
@@ -64,7 +64,7 @@ summary(anova_site_season)
 
 The results indicated that the site has a significant effect on algae coverage (p < 0.001), while the season showed a trend towards significance (p = 0.062). The interaction between site and season was not significant (p = 0.300).
 
-####One-Way ANOVA for Algae by Depth
+#### One-Way ANOVA for Algae by Depth
 A one-way ANOVA was performed to determine the effect of depth on algae coverage:
 
 ~~~R
@@ -74,7 +74,7 @@ summary(anova_depth)
 ~~~
 The depth had a highly significant effect on algae coverage (p < 0.001).
 
-####One-Way ANOVA for Algae by Year
+#### One-Way ANOVA for Algae by Year
 A one-way ANOVA was conducted to assess the effect of year on algae coverage:
 
 ~~~R
@@ -85,7 +85,7 @@ summary(anova_year)
 
 The year also had a significant effect on algae coverage (p < 0.001).
 
-####Correlation between Algae and Bryozoa Coverage
+#### Correlation between Algae and Bryozoa Coverage
 The relationship between algae and bryozoa coverage was examined using a Pearson correlation test:
 
 ~~~r
@@ -115,7 +115,7 @@ The Pearson correlation test showed a strong negative correlation between algae 
 
 The following plots were created to visualize the data:
 
-####Algae by Site and Season:
+#### Algae by Site and Season:
 
 ~~~R
 ggplot(Photosurvey, aes(x = site, y = Algae, fill = season)) +
@@ -130,7 +130,7 @@ ggplot(Photosurvey, aes(x = site, y = Algae, fill = season)) +
 ~~~
 ![Algae by Site and Season](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/images/Research%20Methods%20-%20Homework%20images/Algaesiteseason.svg)
 
-####Algae by Depth and Season:
+#### Algae by Depth and Season:
 
 ~~~R
 ggplot(Photosurvey, aes(x = factor(depth), y = Algae, fill = season)) +
@@ -145,7 +145,7 @@ ggplot(Photosurvey, aes(x = factor(depth), y = Algae, fill = season)) +
 ~~~
 ![Algae by Depth and Season](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/images/Research%20Methods%20-%20Homework%20images/Algaedepthseason.svg)
 
-####Algae by Year and Site:
+#### Algae by Year and Site:
 
 ~~~R
 ggplot(Photosurvey, aes(x = factor(Year), y = Algae, fill = site)) +
@@ -160,7 +160,7 @@ ggplot(Photosurvey, aes(x = factor(Year), y = Algae, fill = site)) +
 ~~~
 ![Algae by Year and Site](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/images/Research%20Methods%20-%20Homework%20images/Algae_year_site.svg)
 
-####Relationship between Algae and Bryozoa Coverage:
+#### Relationship between Algae and Bryozoa Coverage:
 ~~~R
 ggplot(Photosurvey, aes(x = Algae, y = Bryozoa, color = site)) +
   geom_point() +
@@ -174,5 +174,5 @@ ggplot(Photosurvey, aes(x = Algae, y = Bryozoa, color = site)) +
 ~~~
 ![Relationship between Algae and Bryozoa Coverage](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/images/Research%20Methods%20-%20Homework%20images/AlgaeBryozoa.svg)
 
-##Conclusion
+## Conclusion
 The analysis revealed significant effects of site, depth, and year on algae coverage. The interaction between site and season was not significant, indicating that the effect of the season might not differ significantly between sites. The strong negative correlation between algae and bryozoa coverage suggests a competitive relationship between these taxonomic groups.
