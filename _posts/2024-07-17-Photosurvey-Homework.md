@@ -172,7 +172,7 @@ ggplot(Photosurvey, aes(x = Algae, y = Bryozoa, color = site)) +
   theme_minimal()
 
 ~~~
-![Relationship between Algae and Bryozoa Coverage](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/images/Research%20Methods%20-%20Homework%20images/AlgaeBryozoa.svg)
+![Relationship between Algae and Bryozoa Coverage](images/Research Methods - Homework images/AlgaeBryozoa.svg)
 
 ## Conclusion
 The analysis revealed significant effects of site, depth, and year on algae coverage. The interaction between site and season was not significant, indicating that the effect of the season might not differ significantly between sites. The strong negative correlation between algae and bryozoa coverage suggests a competitive relationship between these taxonomic groups.
