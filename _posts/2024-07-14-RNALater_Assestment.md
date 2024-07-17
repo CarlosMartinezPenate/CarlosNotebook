@@ -135,4 +135,4 @@ tags: RNALater
 	- Filter 2 = 58.5 nanograms RNA / microliter.
 	- Filter 11 = 24.7 nanograms RNA / microliter.
 	- Filter 12 = 53.5 nanograms RNA / microliter.
-2. TapeStation results can be found on: [Tapestation Results](Data/Tapestation 2024-07-02-01 copy.pdf)
+2. TapeStation results can be found on: [Tapestation Results](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/Data/Tapestation%202024-07-02-01%20copy.pdf)
