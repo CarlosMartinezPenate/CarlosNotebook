@@ -128,7 +128,7 @@ ggplot(Photosurvey, aes(x = site, y = Algae, fill = season)) +
   theme_minimal()
 
 ~~~
-![Algae by Site and Season](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/_images/Research_Methods_Homework_images/Algaedepthseason.svg)
+![Algae by Site and Season](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/_images/Research_Methods_Homework_images/Algaesiteseason.svg)
 
 #### Algae by Depth and Season:
 
@@ -158,7 +158,7 @@ ggplot(Photosurvey, aes(x = factor(Year), y = Algae, fill = site)) +
   theme_minimal()
 
 ~~~
-![Algae by Year and Site]([https://github.com/DieGrungeDie/CarlosNotebook/blob/main/_images/Research_Methods_Homework_images/Algae_year_site.svg)
+![Algae by Year and Site](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/_images/Research_Methods_Homework_images/Algae_year_site.svg)
 
 #### Relationship between Algae and Bryozoa Coverage:
 ~~~R
