@@ -110,3 +110,69 @@ sample estimates:
 ~~~
 
 The Pearson correlation test showed a strong negative correlation between algae and bryozoa coverage (r = -0.721, p < 2.2e-16), indicating that as algae coverage increases, bryozoa coverage tends to decrease.
+
+###Data Visualization
+
+The following plots were created to visualize the data:
+
+####Algae by Site and Season:
+
+~~~R
+ggplot(Photosurvey, aes(x = site, y = Algae, fill = season)) +
+  geom_boxplot() +
+  labs(
+    title = "Algae by Site and Season",
+    x = "Site",
+    y = "Algae (#)"
+  ) +
+  theme_minimal()
+
+~~~
+![Algae by Site and Season](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/images/Research%20Methods%20-%20Homework%20images/Algaesiteseason.svg)
+
+####Algae by Depth and Season:
+
+~~~R
+ggplot(Photosurvey, aes(x = factor(depth), y = Algae, fill = season)) +
+  geom_boxplot() +
+  labs(
+    title = "Algae by Depth and Season",
+    x = "Depth (m)",
+    y = "Algae (#)"
+  ) +
+  theme_minimal()
+
+~~~
+![Algae by Depth and Season](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/images/Research%20Methods%20-%20Homework%20images/Algaedepthseason.svg)
+
+####Algae by Year and Site:
+
+~~~R
+ggplot(Photosurvey, aes(x = factor(Year), y = Algae, fill = site)) +
+  geom_boxplot() +
+  labs(
+    title = "Algae by Year and Site",
+    x = "Year",
+    y = "Algae (#)"
+  ) +
+  theme_minimal()
+
+~~~
+![Algae by Year and Site](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/images/Research%20Methods%20-%20Homework%20images/Algae_year_site.svg)
+
+####Relationship between Algae and Bryozoa Coverage:
+~~~R
+ggplot(Photosurvey, aes(x = Algae, y = Bryozoa, color = site)) +
+  geom_point() +
+  labs(
+    title = "Relationship between Algae and Bryozoa Coverage",
+    x = "Algae Coverage (%)",
+    y = "Bryozoa Coverage (%)"
+  ) +
+  theme_minimal()
+
+~~~
+![Relationship between Algae and Bryozoa Coverage](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/images/Research%20Methods%20-%20Homework%20images/AlgaeBryozoa.svg)
+
+##Conclusion
+The analysis revealed significant effects of site, depth, and year on algae coverage. The interaction between site and season was not significant, indicating that the effect of the season might not differ significantly between sites. The strong negative correlation between algae and bryozoa coverage suggests a competitive relationship between these taxonomic groups.
