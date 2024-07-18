@@ -128,7 +128,7 @@ ggplot(Photosurvey, aes(x = site, y = Algae, fill = season)) +
   theme_minimal()
 
 ~~~
-![Algae by Site and Season](../_images/Research_Methods_Homework_images/Algaesiteseason.svg)
+![Algae by Site and Season](/_images/Research_Methods_Homework_images/Algaesiteseason.svg)
 
 #### Algae by Depth and Season:
 
@@ -143,7 +143,7 @@ ggplot(Photosurvey, aes(x = factor(depth), y = Algae, fill = season)) +
   theme_minimal()
 
 ~~~
-![Algae by Depth and Season](../_images/Research_Methods_Homework_images/Algaedepthseason.svg)
+![Algae by Depth and Season](/_images/Research_Methods_Homework_images/Algaedepthseason.svg)
 
 #### Algae by Year and Site:
 
@@ -158,7 +158,7 @@ ggplot(Photosurvey, aes(x = factor(Year), y = Algae, fill = site)) +
   theme_minimal()
 
 ~~~
-![Algae by Year and Site](../_images/Research_Methods_Homework_images/Algae_year_site.svg)
+![Algae by Year and Site](/_images/Research_Methods_Homework_images/Algae_year_site.svg)
 
 #### Relationship between Algae and Bryozoa Coverage:
 ~~~R
@@ -172,7 +172,7 @@ ggplot(Photosurvey, aes(x = Algae, y = Bryozoa, color = site)) +
   theme_minimal()
 
 ~~~
-![Relationship between Algae and Bryozoa Coverage](../_images/Research_Methods_Homework_images/AlgaeBryozoa.svg)
+![Relationship between Algae and Bryozoa Coverage](/_images/Research_Methods_Homework_images/AlgaeBryozoa.svg)
 
 ## Conclusion
 The analysis revealed significant effects of site, depth, and year on algae coverage. The interaction between site and season was not significant, indicating that the effect of the season might not differ significantly between sites. The strong negative correlation between algae and bryozoa coverage suggests a competitive relationship between these taxonomic groups.
