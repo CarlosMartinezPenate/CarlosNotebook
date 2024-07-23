@@ -7,7 +7,7 @@ tags: R
 ---
 # Data Analysis of Photosurvey
 ## Objective
-The objective of this analysis is to explore and understand the variation in algae coverage across different sites, seasons, depths, and years. The data was processed using R, and various statistical analyses were conducted to determine the significance of these factors.
+The objective of this analysis is to explore and understand the variation in algae coverage across different sites, seasons, depths, and years. The data was processed using R, and various statistical analyses were conducted to determine the significance of these factors. The complete code can be found here: ![Code in R](https://github.com/DieGrungeDie/CarlosNotebook/blob/main/_Codes/Homework_Code.R)
 
 ### Data Loading and Structure
 First, the necessary libraries were loaded, and the working directory was set. The dataset Photosurvey.csv, the data set was obtained from a previous class exercise. was then read into R and its structure was examined:
