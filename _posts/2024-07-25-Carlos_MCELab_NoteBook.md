@@ -128,6 +128,164 @@ To unbox and check the equipment with Daniel Sher (MCELab's Principal Investigat
 - The PPS showed no major issues, while the DCS requires immediate attention due to electrical problems.
 
 ---
+
+# Marine Chemical Ecology (MCE) Lab Notebook
+
+#**Date:** 21/02/2024
+
+**Activity:** Cleaning the PPS
+
+**Objective:**
+To clean the Phytoplankton and Particle Sampler (PPS) pump using a hydrochloric acid (HCl) solution and ensure it is ready for priming.
+
+**Location:**
+- IOLR
+
+**Details:**
+
+1. **Preparation:**
+   - Prepared a 0.5% HCl solution.
+
+2. **Cleaning Process:**
+   - Fed the HCl solution through the pump in a forward direction at 75 ml/min.
+   - Observed some foaming coming out of some of the filters.
+   - Flushed the system with double-distilled water (DDW) at the same rate.
+
+3. **Result:**
+   - The PPS was deemed clean and ready to be primed.
+
+---
+
+# Marine Chemical Ecology (MCE) Lab Notebook
+
+#**Date:** 20/03/2024
+
+**Activity:** Firmware Update of the PPS
+
+**Objective:**
+To update the firmware for the PPS electronics and measure the pump efficiency after the update.
+
+**Location:**
+- IOLR
+
+**Details:**
+
+1. **Firmware Update:**
+   - The PPS software installed on the computer failed to show deployment options.
+   - Updated the firmware for the PPS electronics according to McLane's instructions.
+
+2. **Efficiency Testing:**
+   - Measured the efficiency of the pump in several runs after the firmware update:
+
+   | Flowrate (ml/min) | Programmed Volume (ml) | Measured Volume (ml) | Efficiency (%) | Direction | Date       |
+   |-------------------|-------------------------|-----------------------|----------------|-----------|------------|
+   | 75                | 100                     | 85                    | 85             | F         | 20/03/2024 |
+   | 50                | 15                      | 15                    | 100            | F         | 20/03/2024 |
+   | 75                | 100                     | 80                    | 80             | F         | 20/03/2024 |
+   | 75                | 100                     | 75                    | 75             | F         | 20/03/2024 |
+   | 125               | 250                     | 155                   | 62             | F         | 20/03/2024 |
+   | 125               | 150                     | 145                   | 96.67          | R         | 20/03/2024 |
+   | 125               | 200                     | 145                   | 72.5           | F         | 20/03/2024 |
+   | 50                | 200                     | 140                   | 70             | F         | 20/03/2024 |
+   | 50                | 20                      | 18                    | 90             | R         | 20/03/2024 |
+   | 125               | 20                      | 17                    | 85             | R         | 20/03/2024 |
+   | 125               | 150                     | 100                   | 66.67          | R         | 20/03/2024 |
+   | 75                | 100                     | 70                    | 70             | R         | 20/03/2024 |
+   | 75                | 100                     | 70                    | 70             | F         | 20/03/2024 |
+   | 75                | 100                     | 100                   | 100            | R         | 20/03/2024 |
+   | 75                | 100                     | 95                    | 95             | R         | 20/03/2024 |
+   | 75                | 100                     | 105                   | 95             | R         | 20/03/2024 |
+   | 100               | 225                     | 165                   | 73.33          | F         | 20/03/2024 |
+   | 125               | 475                     | 330                   | 69.47          | R         | 20/03/2024 |
+
+   - The average efficiency was calculated at 80.86%, deemed acceptable.
+
+---
+# Marine Chemical Ecology (MCE) Lab Notebook
+
+#**Date:** 31/03/2024
+
+#**Activity:** Battery Holder Replacement for PPS
+
+**Objective:**
+To address the PPS software issue related to a low backup battery.
+
+**Location:**
+- IOLR
+
+**Details:**
+
+1. **Battery Issue:**
+   - The PPS software was refusing to deploy the system due to a low backup battery.
+   - Upon attempting to change the battery, a cut battery holder wire was encountered.
+
+2. **Replacement:**
+   - The battery holder was replaced by the IOLR electronic engineering department.
+   - A deployment test was performed, deeming the PPS ready for deployment.
+
+---
+
+# Marine Chemical Ecology (MCE) Lab Notebook
+
+#**Date:** 24/04/2024
+
+**Activity:** Unbox and Inspect the DCS
+
+**Objective:**
+To unbox and inspect the Diffusion Chamber Sampler (DCS) and prepare for learning activities.
+
+**Location:**
+- IOLR
+
+**Details:**
+
+1. **Inspection:**
+   - The DCS was hoisted out of its crate and inspected.
+   - All components were found to be in good state.
+
+---
+
+#**Date:** 01/05/2024
+
+**Activity:** Priming the Fixative in the PPS
+
+**Objective:**
+To prime the fixative bags in the PPS according to the manual.
+
+**Location:**
+- IOLR
+
+**Details:**
+
+1. **Priming Procedure:**
+   - The procedure to prime the fixative bags was carried out according to the PPS manual.
+   - The fixative line was observed to be working fine.
+
+---
+# Marine Chemical Ecology (MCE) Lab Notebook
+
+#**Date:** 08/05/2024
+
+**Activity:** Communication Test for DCS
+
+**Objective:**
+To test the communication functionality of the DCS computer.
+
+**Location:**
+- IOLR
+
+**Details:**
+
+1. **Testing:**
+   - Retrieved the DCS computer and connected it to its battery.
+   - Upon connection, smoke emanated from the board labeled 2.
+   - Identified 2 capacitors as the failing points.
+   - Quickly disconnected the battery and stored the computer.
+
+2. **Next Steps:**
+   - Communication with McLane was initiated to obtain specifications for the capacitors to be replaced in the future.
+  
+---
 # Marine Chemical Ecology (MCE) Lab Notebook
 
 #**Date:** 06/06/2024
