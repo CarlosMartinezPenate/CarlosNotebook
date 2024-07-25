@@ -10,6 +10,7 @@ tags: RNALater
 ## Date: Jun 2
 
 ### Observations:
+Experiment: RNALater Assestment
 
 ### Time: 9:30 - 9:52
 - The seawater reservoir was filled to capacity and left to let the sand settle.
