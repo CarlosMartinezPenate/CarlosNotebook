@@ -357,6 +357,71 @@ To further troubleshoot and inspect the PPS pump, focusing on persistent issues 
 - Further disassembly and adjustment are needed to address the problem.
 
 ---
+# Marine Chemical Ecology (MCE) Lab Notebook
+
+#**Date:** 24/07/2024
+
+**Activity 1:** Continue Troubleshooting of PPS Pump
+
+**Objective:**
+To further troubleshoot and inspect the PPS pump, focusing on wear and performance issues.
+
+**Location:**
+- IOLR
+
+**Details:**
+
+1. **Inspection and Testing:**
+   - Retrieved the pump from storage; the diaphragm still felt tense.
+   - Connected the pump to electronics and retested; programmed 250 mL to pump, but only yielded 150 mL.
+
+2. **Microscopic Inspection:**
+   - Disassembled the pump and observed wear on the cogs and suction shoe under a microscope in one of the IOLR workshops.
+   - Removed the spring holding the suction shoe by twisting the spring screw.
+   - Inspected the suction shoe, noting some wear and the presence of crystals on one surface.
+   - Readjusted the spring to rest on the same spot and held it in place by tightening the screw.
+
+3. **Efficiency Testing:**
+   - Reassembled the pump and conducted efficiency tests:
+
+   | Flowrate (ml/min) | Programmed Volume (ml) | Measured Volume (ml) | Efficiency (%) |
+   |-------------------|-------------------------|-----------------------|----------------|
+   | 75                | 100                     | 92.5                  | -7.5           |
+   | 75                | 100                     | 86                    | -14            |
+   | 75                | 100                     | 98                    | -2             |
+   | 75                | 100                     | 96                    | -4             |
+   | 75                | 100                     | 96                    | -4             |
+   | 75                | 100                     | 96                    | -4             |
+   | 75                | 100                     | 97.7                  | -2.3           |
+   | 75                | 100                     | 96                    | -4             |
+   | 125               | 250                     | 217                   | -13.2          |
+   | 125               | 250                     | 222                   | -11.2          |
+   | 125               | 250                     | 231                   | -7.6           |
+   | 125               | 250                     | 231                   | -7.6           |
+   | 125               | 250                     | 223                   | -10.8          |
+   | 125               | 250                     | 220                   | -12            |
+   | 125               | 250                     | 224                   | -10.4          |
+
+   - An average efficiency of 7.64% was observed, close to the expected 5%.
+
+4. **Next Steps:**
+   - The pump was disconnected and stored in a toolbox for future testing.
+
+---
+
+**Activity 2:** Changing Capacitors for the DCS Computer
+
+**Objective:**
+To replace burnt capacitors on the DCS computer.
+
+**Location:**
+- IOLR
+
+**Details:**
+
+1. **Capacitor Replacement:**
+   - An electronics engineer at IOLR replaced 2 burnt capacitors on the DCS.
+   - The fixed board was stored for future testing.
 
 
 
