@@ -580,6 +580,64 @@ To replace burnt capacitors on the DCS computer.
 1. **Capacitor Replacement:**
    - An electronics engineer at IOLR replaced 2 burnt capacitors on the DCS.
    - The fixed board was stored for future testing.
+# Marine Chemical Ecology (MCE) Lab Notebook
+
+**Date:** 29/07/2024
+
+**Activity:** Reinspect the PPS Pump and Perform an Efficiency Test
+
+**Objective:**
+To reinspect the PPS pump and conduct an efficiency test to ensure it is functioning correctly.
+
+**Location:**
+- IOLR
+
+**Details:**
+
+1. **Inspection:**
+   - Retrieved the pump from storage.
+   - No oil leaks detected.
+   - The diaphragm was still under tension.
+
+2. **Disassembly and Cleaning:**
+   - Disassembled the pump and inspected the components.
+   - The spring was held in place.
+   - Cleaned the pump and readjusted the spring.
+   - Reassembled the pump and established communication.
+
+3. **Dry Lift Test:**
+   - The pump achieved dry lift and pumping.
+   - The software reported a pressure release during the efficiency test.
+   - Inspected the pump again with no changes detected in the spring.
+   - Reassembled the pump.
+
+4. **Test:**
+   - Retested the pump, which was deemed to be pumping with sufficient force and efficiency.
+   - The pump was reinstalled in the PPS frame for further testing.
+   - It is also noted that in reverse direction the pump seem to have less efficiency
+# Marine Chemical Ecology (MCE) Lab Notebook
+
+**Date:** 30/07/2024
+
+**Activity:** Inspection of the DCS, Retrieval, and Transport of the DCS Motherboard to HaifaU for Reassembling
+
+**Objective:**
+To inspect the DCS, document its condition, and transport the DCS motherboard and a Diffusion Chamber (DC) to HaifaU for reassembling and future inspection.
+
+**Location:**
+- IOLR
+
+**Details:**
+
+1. **Inspection:**
+   - Inspected the DCS.
+   - Took a video and pictures for future reference.
+
+2. **Transport:**
+   - Retrieved the DCS motherboard.
+   - Transported the DCS motherboard to HaifaU for reassembling.
+   - Transported a Diffusion Chamber (DC) to HaifaU for future inspection and use.
+
 
 
 
