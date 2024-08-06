@@ -582,7 +582,7 @@ To replace burnt capacitors on the DCS computer.
    - The fixed board was stored for future testing.
 # Marine Chemical Ecology (MCE) Lab Notebook
 
-**Date:** 29/07/2024
+#**Date:** 29/07/2024
 
 **Activity:** Reinspect the PPS Pump and Perform an Efficiency Test
 
@@ -617,7 +617,7 @@ To reinspect the PPS pump and conduct an efficiency test to ensure it is functio
    - It is also noted that in reverse direction the pump seem to have less efficiency
 # Marine Chemical Ecology (MCE) Lab Notebook
 
-**Date:** 30/07/2024
+#**Date:** 30/07/2024
 
 **Activity:** Inspection of the DCS, Retrieval, and Transport of the DCS Motherboard to HaifaU for Reassembling
 
@@ -638,6 +638,47 @@ To inspect the DCS, document its condition, and transport the DCS motherboard an
    - Transported the DCS motherboard to HaifaU for reassembling.
    - Transported a Diffusion Chamber (DC) to HaifaU for future inspection and use.
 
+# Marine Chemical Ecology (MCE) Lab Notebook
+
+#**Date:** 05/08/2024
+
+**Activity 1:** Reassembling and Installing the DCS Computer and Test for Communication
+
+**Objective:**
+To reassemble the DCS computer and test its communication functionality.
+
+**Location:**
+- IOLR
+
+**Details:**
+1. **Reassembly:**
+   - Reassembled the DCS computer.
+   - Noted one metal washer to be in surplus.
+   - The plastic separator seemed to be slightly forced.
+   
+2. **Testing:**
+   - Upon connection with the battery, a spark and smoke were observed coming from the board.
+   - Smoke and a burning smell were registered, identified as coming from a capacitor on board number 3 and possibly number 2.
+   - The DCS computer was unplugged immediately and stored for inspection.
+   - Capacitors to be replaced by the IOLR electronic engineer on 07/08/2024.
+
+---
+
+**Activity 2:** Reassessment of PPS Pump Efficiency
+
+**Objective:**
+To reassess the efficiency of the PPS pump.
+
+**Location:**
+- IOLR
+
+**Details:**
+1. **Testing:**
+   - Tested the pump while mounted on the PPS frame without the filter holders.
+   - Observed that the pump works fine in the forward direction but has difficulties in the reverse direction.
+   
+2. **Conclusion:**
+   - It is deemed necessary to replace the pump with a new pump kit.
 
 
 
