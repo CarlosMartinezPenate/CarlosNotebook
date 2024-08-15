@@ -680,5 +680,22 @@ To reassess the efficiency of the PPS pump.
 2. **Conclusion:**
    - It is deemed necessary to replace the pump with a new pump kit.
 
+# Marine Chemical Ecology (MCE) Lab Notebook
+
+#**Date:** 14/08/2024
+
+**Activity:** Wiring of Timer Controller to Sample Peristaltic Pump
+
+**Objective:** Advance preparations for diffusion chamber (DC) experiments.
+
+**Location:** MCELab
+
+**Details:**
+- The timer relay controller ([Relay](https://www.amazon.co.uk/dp/B07XB5FBJF)) was wired to the peristaltic pump ([Pump](https://he.aliexpress.com/item/1005005553286343.html)) by the electronic engineer at the HaifaU UAV lab.
+- The wiring was tested, and the system performed well.
+
+**Future Actions:**
+- Assemble the diffusion chamber respiratory system to a syringe pump.
+- Finalize the experimental design for the upcoming diffusion chamber experiments.
 
 
