@@ -698,4 +698,22 @@ To reassess the efficiency of the PPS pump.
 - Assemble the diffusion chamber respiratory system to a syringe pump.
 - Finalize the experimental design for the upcoming diffusion chamber experiments.
 
+# Marine Chemical Ecology (MCE) Lab Notebook
 
+**Date:** 18/08/2024
+
+**Location:** MCELab
+
+**Activity:** Set Up the Apparatus for Diffusion Chamber Experiments
+
+**Objective:** To advance preparations for diffusion chamber experiments.
+
+**Details:**
+- The Kynar bag was assembled into one of the diffusion chambers. Only one of the machined holes was suitable for fitting the Kynar bag hose.
+- The Kynar bag was connected to a syringe pump with a 50 ml syringe. The pump was programmed to perform 50 cycles of infuse and withdraw 50 ml of air at a rate of 50 ml/min as a test. The setup worked fine.
+- Due to a lack of instructions, the connection of the bag inside the chamber may not be optimal. A test to check for leakages will be set up in the future.
+- The peristaltic pump was connected to the chamber and is ready to feed samples into the fraction collector.
+
+**Future Actions:**
+- Conduct leakage tests for the Kynar bag setup.
+- Incorporate the fraction collector into the system.
