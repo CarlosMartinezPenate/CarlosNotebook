@@ -717,3 +717,26 @@ To reassess the efficiency of the PPS pump.
 **Future Actions:**
 - Conduct leakage tests for the Kynar bag setup.
 - Incorporate the fraction collector into the system.
+
+# Marine Chemical Ecology (MCE) Lab Notebook
+
+#**Date:** 19/08/2024
+
+**Location:** MCELab
+
+**Activity:** Retrieve the Fraction Collector from the LPC Room
+
+**Objective:** To advance preparations for diffusion chamber experiments.
+
+**Details:**
+- Disconnected the power strip powering the LPC.
+- Disconnected the power to the fraction collector (FC).
+- Disconnected the feed line from the LPC to the FC.
+- Disconnected the communication and signal cables from the LPC.
+- Extracted the waste hose from the waste container.
+- Left the LPC disconnected from the power supply.
+- Transported the FC to the MCELab.
+- Cleaned the FC in preparation for future programming and testing.
+
+**Future Actions:**
+- Program and test the fraction collector for integration into the diffusion chamber setup.
