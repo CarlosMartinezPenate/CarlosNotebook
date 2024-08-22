@@ -740,3 +740,30 @@ To reassess the efficiency of the PPS pump.
 
 **Future Actions:**
 - Program and test the fraction collector for integration into the diffusion chamber setup.
+
+# Marine Chemical Ecology (MCE) Lab Notebook
+
+**Date:** 21/08/2024
+
+**Location:** MCELab
+
+**Objective:** Set up the FCWIII to Standalone Mode
+
+**Activity:** Remove the ROM chip from the FCWIII and switch it for a standalone ROM chip.
+
+**Details:**
+- The FCWIII had a ROM chip installed for integration into an HPLC system controlled by the Empower system.
+- **Installed ROM version:** W261E, dated 2010.11.02.
+- The FCWIII case was opened to access the motherboard.
+- The motherboard was found to be dusty, with spiderwebs present inside.
+- Compressed air was used to clean the motherboard, and spiderwebs were removed.
+- The installed ROM chip was removed, though some pins bent slightly during the operation. The pins were successfully bent back into their original position without damage.
+- **Replacement ROM version:** W260E, dated 2009.11.06, was installed in place of the original chip.
+- The case was reclosed using a power tool, but the screws were stripped in the process, necessitating future replacement.
+- Upon turning the FCWIII back on, the standalone options were not available, suggesting that the original ROM chip may also be an EPROM chip.
+
+**Future Actions:**
+- Investigate whether the FCWIII’s original ROM chip is an EPROM.
+- Replace the stripped screws with new ones.
+- Continue troubleshooting the standalone mode setup.
+
