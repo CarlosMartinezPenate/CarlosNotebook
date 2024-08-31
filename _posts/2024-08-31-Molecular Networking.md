@@ -20,13 +20,13 @@ This repository documents my work following the "CMFI Mass Spec Seminar #5: Mole
 4. **Cluster Analysis**:
    - Sorted clusters by "Library ID" in descending order.
    - Viewed the molecular network for "Rapamycin."
-[Results](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/main/_images/Research_Methods_Homework_images/Molecular_Network_Results1.png)
-[Results](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/main/_images/Research_Methods_Homework_images/Molecular_Network_Results2.png)
-[Results](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/main/_images/Research_Methods_Homework_images/Molecular_Network_Result3.png)
+![Results](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/main/_images/Research_Methods_Homework_images/Molecular_Network_Results1.png)
+![Results](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/main/_images/Research_Methods_Homework_images/Molecular_Network_Results2.png)
+![Results](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/main/_images/Research_Methods_Homework_images/Molecular_Network_Result3.png)
 
 ### Key Results:
 
-[Molecular Network for Rapamycin](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/main/_images/Research_Methods_Homework_images/Molecular_Networks4.png)
+![Molecular Network for Rapamycin](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/main/_images/Research_Methods_Homework_images/Molecular_Networks4.png)
 
 - **Parent Masses Identified**:
   - 936.544 Dalton
