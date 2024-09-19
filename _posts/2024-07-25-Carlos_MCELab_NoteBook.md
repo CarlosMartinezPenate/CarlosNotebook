@@ -767,3 +767,19 @@ To reassess the efficiency of the PPS pump.
 - Replace the stripped screws with new ones.
 - Continue troubleshooting the standalone mode setup.
 
+# Marine Chemical Ecology (MCE) Lab Notebook
+
+#**Date:** 26/08/2024  
+**Location:** MCELab  
+**Objective:** Replace the FCWIII with a stand-alone Fraction Collector  
+**Activity:** Cleaning and programming of the replacement Fraction Collector
+
+**Details:**
+- The ISCO Foxy Jr. Fraction Collector (FJFC) was received from Daniel Sher.
+- The FCWIII was returned to its original place and removed from the setup.
+- The FJFC was cleaned and inspected for operational errors. All components were deemed functional.
+- All tubing was cleaned with bleach and stored for future use in the MCELab.
+
+**Future Actions:**
+- Program the FJFC with time windows in sequence with the timer to complete the setup for the Diffusion Chamber experiments.
+
