@@ -783,3 +783,20 @@ To reassess the efficiency of the PPS pump.
 **Future Actions:**
 - Program the FJFC with time windows in sequence with the timer to complete the setup for the Diffusion Chamber experiments.
 
+
+# Marine Chemical Ecology (MCE) Lab Notebook  
+#Date: 29/08/2024  
+**Location:** MCELab  
+**Objective:** Set Up the Apparatus for Diffusion Chamber Experiments  
+**Activity:** Perform the correct programming of the FJFCC and synchronization with the digital timer  
+
+**Details:**  
+- Used the program windows to define a time where the fraction collector will collect.  
+- Set the timer to trigger an interval within the defined window for the pump to start.  
+- The apparatus is ready to perform.  
+
+**Future Actions:**  
+- Transport the apparatus to the IOLR.  
+- Complete the experimental design for the diffusion chamber apparatus.  
+- Order 142 mm 0.22 micron filters to perform the experiments.
+
