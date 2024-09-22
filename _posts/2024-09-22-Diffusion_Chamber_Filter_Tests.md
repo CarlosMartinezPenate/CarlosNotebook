@@ -84,7 +84,7 @@ To test and characterize the diffusion properties of 142 mm filters with varying
 - Analyze the phenol red concentration in both sets of samples using a spectrophotometer or colorimeter at its optimal wavelength (~558 nm for phenol red).
 
 # Experimental Setup
-![https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Filter%20Support%20Screen%20(7).png](System Setup)
+![System Setup](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Filter%20Support%20Screen%20(7).png)
 
 
 | **Parameter**                | **Test Condition**                              | **Control Condition**                      | **Replicates** | **Notes**                                                                                 |
