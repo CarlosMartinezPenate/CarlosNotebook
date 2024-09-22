@@ -88,8 +88,8 @@ To test and characterize the diffusion properties of 142 mm filters with varying
 | **Parameter**                | **Test Condition**                              | **Control Condition**                      | **Replicates** | **Notes**                                                                                 |
 |------------------------------|-------------------------------------------------|--------------------------------------------|----------------|-------------------------------------------------------------------------------------------|              
 | **Filter Pore Size**          | 0.22 µm, 0.45 µm, 0.8 µm filters                | No filter (positive control)               | 3 per pore size| Testing different pore sizes for filtration efficiency and diffusion rate.                |
-| **Breathing Rate** | Different breathing rates (e.g., 10 mL/min, 20 mL/min, 50 mL/min) | No pump action                             | 3 per rate     | Simulating different flow volumes with the syringe pump to observe diffusion rate changes. |
-| **Filter Material**           | Cellulose acetate, PTFE                         | Standard filter (cellulose acetate)        | 3 per material | Investigating different filter materials for solute passage and resistance.               |
+| **Breathing Rate** | Different breathing rates (30 mL/min, 50 mL/min, 80 mL/min) | No pump action                             | 3 per rate     | Simulating different flow volumes with the syringe pump to observe diffusion rate changes. |
+| **Filter Material**           | PES (polyethersulphone), PTFE (Polytetrafluoroethylene)                         | Standard filter (cellulose acetate)        | 3 per material | Investigating different filter materials for solute passage and resistance.               |
 
 
 
