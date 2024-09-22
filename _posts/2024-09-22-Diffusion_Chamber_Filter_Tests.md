@@ -1,11 +1,11 @@
 
-#Experimental Design: Testing the Diffusion Properties of 142 mm Filters in Diffusion Chambers
+# Testing the Diffusion Properties of 142 mm Filters in Diffusion Chambers
 **Objective:**
 To test and characterize the diffusion properties of 142 mm filters with varying pore sizes in a controlled environment using diffusion chambers. By varying the syringe pump breathing rates, the experiment will assess how different filters allow the passage of phenol red and measure diffusion rates over time. The goal is to understand how pore size, filter material, and breathing rate influence diffusion under simulated coastal marine conditions.
 
 **Location:** IOLR
 
-##**Materials:**
+## **Materials:**
 
 - Diffusion Chamber (DC): 1.6 L diffusion chamber, Part of McLane's DCS custom system consisting, polycarbonate body, tubular with 142 mm filters positioned between two meshes at both ends.
 
@@ -23,13 +23,13 @@ To test and characterize the diffusion properties of 142 mm filters with varying
 - Multiplate reader
 - pH meter
 
-##**Reagents:**
+## **Reagents:**
 
 - Phenol red solution (as a diffusion tracer)
 - Distilled water (for the breathing system)
 - Ethanol (for cleaning)
 
-##Methods:
+## Methods:
 
 **Preparation:**
 
@@ -52,7 +52,7 @@ To test and characterize the diffusion properties of 142 mm filters with varying
 - Attach a hose to the second peristaltic pump and submerge in the tank to sample at a specific depth. 
 
 
-##Procedure 
+## Procedure 
 
 *Submersion and System Set up:*
 
@@ -83,7 +83,7 @@ To test and characterize the diffusion properties of 142 mm filters with varying
 
 - Analyze the phenol red concentration in both sets of samples using a spectrophotometer or colorimeter at its optimal wavelength (~558 nm for phenol red).
 
-#Experimental Setup
+# Experimental Setup
 
 | **Parameter**                | **Test Condition**                              | **Control Condition**                      | **Replicates** | **Notes**                                                                                 |
 |------------------------------|-------------------------------------------------|--------------------------------------------|----------------|-------------------------------------------------------------------------------------------|              
@@ -93,14 +93,15 @@ To test and characterize the diffusion properties of 142 mm filters with varying
 
 
 
-##Controls in the Experiment
-| **Parameter**                 | **Test Condition**                              | **Control**                                   | **Control Type**       |
-|-------------------------------|-------------------------------------------------|-----------------------------------------------|------------------------| |
-| **Phenol Red Concentration**   | Inject phenol red into chamber                  | Chamber with no phenol red injection          | Negative Control        |
-| **Breathing Rate** | Vary syringe pump flow rate                  | No pump action       | Negative Control        |
-| **Filter Pore Size**           | Use different filter pore sizes | Chamber with no filter                        | Positive Control        | |
+## Controls in the Experiment
 
-##**Data Analysis:**
+| **Parameter**                 | **Test Condition**                              | **Control**                                   | **Control Type**       |
+|-------------------------------|-------------------------------------------------|-----------------------------------------------|------------------------|
+| **Phenol Red Concentration**   | Inject phenol red into chamber                  | Chamber with no phenol red injection          | Negative Control        |
+| **Breathing Rate**            | Vary syringe pump flow rate                     | No pump action                                | Negative Control        |
+| **Filter Pore Size**          | Use different filter pore sizes                  | Chamber with no filter                         | Positive Control        |
+
+## **Data Analysis:**
 
 **Concentration Measurement:**
 - Measure the absorbance of phenol red in the samples using a multi-plate reader (wavelength: 558 nm).
@@ -109,15 +110,14 @@ To test and characterize the diffusion properties of 142 mm filters with varying
 **Diffusion Rate Calculation:**
 - Use Fick’s law of diffusion to calculate the diffusion coefficient for each condition:
 
-$
+\[
 J = -D \frac{dC}{dx}
-$
+\]
 
 where:
-
-- $J$ is the flux (amount of solute diffused per unit area per unit time),
-- $D$ is the diffusion coefficient,
-- $ \frac{dC}{dx} $ is the concentration gradient across the filter.
+- \( J \) is the flux (amount of solute diffused per unit area per unit time),
+- \( D \) is the diffusion coefficient,
+- \( \frac{dC}{dx} \) is the concentration gradient across the filter.
 
 **Effect of Breathing Rates:**
 - Compare the diffusion rates for each breathing rate and assess how the rate of filling/emptying the Kynar bag affects the exchange of material through the filters.
