@@ -110,14 +110,12 @@ To test and characterize the diffusion properties of 142 mm filters with varying
 **Diffusion Rate Calculation:**
 - Use Fick’s law of diffusion to calculate the diffusion coefficient for each condition:
 
-\[
-J = -D \frac{dC}{dx}
-\]
+$J = -D \frac{dC}{dx}$
 
 where:
-- \( J \) is the flux (amount of solute diffused per unit area per unit time),
-- \( D \) is the diffusion coefficient,
-- \( \frac{dC}{dx} \) is the concentration gradient across the filter.
+- $J$ is the flux (amount of solute diffused per unit area per unit time),
+- $D$ is the diffusion coefficient,
+- $\frac{dC}{dx}$ is the concentration gradient across the filter.
 
 **Effect of Breathing Rates:**
 - Compare the diffusion rates for each breathing rate and assess how the rate of filling/emptying the Kynar bag affects the exchange of material through the filters.
