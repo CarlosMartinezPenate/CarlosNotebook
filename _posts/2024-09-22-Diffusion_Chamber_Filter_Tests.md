@@ -14,10 +14,13 @@ To test and characterize the diffusion properties of 142 mm filters with varying
 	- Syringe Pump: Capable of controlling the volume of water flow (50 mL syringe) at different breathing rates.
 - *Semi-Automated Sampling System*:	
 	- ISCO Foxy Jr. Fraction Collector (FJFC)
+ 		- ![Manual](https://conquerscientific.com/wp-content/uploads/2022/08/teledyne-isco-foxy-jr-fraction-collector_installationoperation-guide.pdf)
 	- Peristaltic pumps ( NKCP_S08B and NKCP_204B)
 	- Digital timer (for synchronization with FJFC)
 - 200 L Submersion Tank: Filled with running saltwater to simulate marine conditions, with constant flow at 1-2 L/min.
-- 142 mm Filters: with 0.22 µm, 0.45 µm, 0.8 µm pore sizes, different materials for testing
+- 142 mm Filters: with 0.22 µm, 0.45 µm, 0.8 µm pore sizes, different materials for testing:
+  	- ![PES 0.8 micron](https://www.fishersci.at/shop/products/supor-800-membrane-disc-filters-7/17114491)
+	- ![PES 0.45 micron](https://www.merckmillipore.com/INTL/en/product/Millipore-Express-PLUS-Membrane-Filter,MM_NF-HPWP14250)
 - Conductivity meter 
 - Volumetric flasks, graduated cylinders, pipettes and tubes
 - Multiplate reader
