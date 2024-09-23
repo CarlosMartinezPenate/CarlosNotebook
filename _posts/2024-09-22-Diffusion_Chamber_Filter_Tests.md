@@ -68,7 +68,7 @@ To test and characterize the diffusion properties of 142 mm filters with varying
 
 *Control the Syringe Pump:*
 
-- Set the syringe pump to varying breathing rates o simulate different volumes of water being pushed into and pulled out of the chamber.
+- Set the syringe pump to varying breathing rates to simulate different volumes of water being pushed into and pulled out of the chamber.
 
 *Control of the Semi-Automatic Sampling:*
 
@@ -98,9 +98,11 @@ To test and characterize the diffusion properties of 142 mm filters with varying
 | **Breathing Rate** | Different breathing rates (30 mL/min, 50 mL/min, 80 mL/min) | No pump action                             | 3 per rate     | Simulating different flow volumes with the syringe pump to observe diffusion rate changes. |
 | **Filter Material**           | PES (polyethersulphone), PTFE (Polytetrafluoroethylene)                         | Standard filter (cellulose acetate)        | 3 per material | Investigating different filter materials for solute passage and resistance.               |
 
-
+##Initial Run
 
 ## Controls in the Experiment
+
+
 
 | **Parameter**                 | **Test Condition**                              | **Control**                                   | **Control Type**       |
 |-------------------------------|-------------------------------------------------|-----------------------------------------------|------------------------|
