@@ -145,12 +145,14 @@ where:
 - $\frac{dC}{dx}$ is the concentration gradient across the filter.
 
 **Effect of Breathing Rates:**
+
 - Compare the diffusion rates for each breathing rate and assess how the rate of filling/emptying the Kynar bag affects the exchange of material through the filters.
 
 **Statistical Analysis:**
+
 - Perform regression analysis to assess the relationship between breathing rate and diffusion.
 - Use ANOVA or t-tests to compare different rates and control conditions.
-(
+
 **Crystal Violet Biofilm Test**
 
  - [Methodology](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9571847/)
@@ -160,6 +162,7 @@ where:
 - [DADA original paper](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-13-283).
 - [DADA2 pipeline paper](https://www.nature.com/articles/nmeth.3869#Sec2)
 - [AVS](https://academic.oup.com/ismej/article/11/12/2639/7537828)
+- [Phyloseq](https://joey711.github.io/phyloseq/)
 
 
 
