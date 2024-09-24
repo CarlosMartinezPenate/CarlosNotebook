@@ -95,14 +95,14 @@ To test and characterize the diffusion properties of 142 mm filters with varying
 - Start the experiment with the controls (No Filter) (1 hour experimets)
 - The filtered experiments will be monitored 24 hours, so it should be spaced out in time to allow for preparations, sampling scheme is show as also is a graphical representation of the system set up :
 
-|     | S | M | T | W | T | F | S | M | T | W | D | F |
+|     | S | M | T | W | T | F | S | S | M | T | W | T |
 |-----|---|---|---|---|---|---|---|---|---|---|---|---|
 | **Sample 1** |   | ✅ |   |   |   |   |   |   |   |   |   |   |
 | **Sample 2** |   | ✅ |   |   |   |   |   |   |   |   |   |   |
 | **Sample 3** |   | ✅ |   |   |   |   |   |   |   |   |   |   |
 | **Sample 4** |   |   |   | ✅ |   |   |   |   |   |   |   |   |
-| **Sample 5** |   |   |   |   |   | ✅ |   |   |   |   |   |   |
-| **Sample 6** |   |   |   |   |   |   | ✅ |   |   |   |   |   |
+| **Sample 5** |   |   |   |   |   |  |   |  |  |  ✅ |  |   |
+| **Sample 6** |   |   |   |   |   |   | |  ✅ |   |   |   |   |
 
 
 ![System Setup](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Filter%20Support%20Screen%20(7).png)
@@ -150,6 +150,16 @@ where:
 **Statistical Analysis:**
 - Perform regression analysis to assess the relationship between breathing rate and diffusion.
 - Use ANOVA or t-tests to compare different rates and control conditions.
+(
+**Crystal Violet Biofilm Test**
+
+ - [Methodology](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9571847/)
+
+**Ribosomal S16 RNA Gene Analysis**
+
+- [DADA original paper](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-13-283).
+- [DADA2 pipeline paper](https://www.nature.com/articles/nmeth.3869#Sec2)
+- [AVS](https://academic.oup.com/ismej/article/11/12/2639/7537828)
 
 
 
