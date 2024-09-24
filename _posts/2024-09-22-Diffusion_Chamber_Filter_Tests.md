@@ -89,7 +89,25 @@ To test and characterize the diffusion properties of 142 mm filters with varying
 - Analyze the phenol red concentration in both sets of samples using a spectrophotometer or colorimeter at its optimal wavelength (~558 nm for phenol red).
 
 # Experimental Setup
+
+*Sampling regime* 
+
+- Start the experiment with the controls (No Filter) (1 hour experimets)
+- The filtered experiments will be monitored 24 hours, so it should be spaced out in time to allow for preparations, sampling scheme is show as also is a graphical representation of the system set up :
+
+|     | S | M | T | W | T | F | S | M | T | W | D | F |
+|-----|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Sample 1** |   | ✅ |   |   |   |   |   |   |   |   |   |   |
+| **Sample 2** |   | ✅ |   |   |   |   |   |   |   |   |   |   |
+| **Sample 3** |   | ✅ |   |   |   |   |   |   |   |   |   |   |
+| **Sample 4** |   |   |   | ✅ |   |   |   |   |   |   |   |   |
+| **Sample 5** |   |   |   |   |   | ✅ |   |   |   |   |   |   |
+| **Sample 6** |   |   |   |   |   |   | ✅ |   |   |   |   |   |
+
+
 ![System Setup](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Filter%20Support%20Screen%20(7).png)
+
+The Parameter sub due to evalauation are represented in the table:
 
 
 | **Parameter**                | **Test Condition**                              | **Control Condition**                      | **Replicates** | **Notes**                                                                                 |
@@ -98,7 +116,7 @@ To test and characterize the diffusion properties of 142 mm filters with varying
 | **Breathing Rate** | Different breathing rates (30 mL/min, 50 mL/min, 80 mL/min) | No pump action                             | 3 per rate     | Simulating different flow volumes with the syringe pump to observe diffusion rate changes. |
 | **Filter Material**           | PES (polyethersulphone), PTFE (Polytetrafluoroethylene)                         | Standard filter (cellulose acetate)        | 3 per material | Investigating different filter materials for solute passage and resistance.               |
 
-##Initial Run
+The controls for the experiment are shown in the table:
 
 ## Controls in the Experiment
 
