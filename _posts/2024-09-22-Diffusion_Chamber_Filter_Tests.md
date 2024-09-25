@@ -158,6 +158,7 @@ The controls for the experiment are shown in the table:
 ### Sample Handling
 
 #### Steps for Sample Collection and Filter Processing:
+![Filter Retrieval and Storage](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Remove%20all%20Lysis%20bufferRNAsave%20on%20blotting%20paper.%20(3).png)
 
 1. **Retrieve the Diffusion Chamber (DC):**
    - Carefully remove the diffusion chamber from the 200 L saltwater tank.
