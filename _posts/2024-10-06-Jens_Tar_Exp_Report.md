@@ -1,3 +1,11 @@
+---
+layout: post
+title: Jens Tar Experiment Phyloseq Results
+date: '2024-10-06'
+categories: Restuts
+tags: Tar
+---
+
 # Ordination Plots
 ##Canonical Correspondence 
 - ![Ordination CCA](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/ordination_cca.png)  
