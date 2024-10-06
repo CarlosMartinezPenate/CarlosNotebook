@@ -64,12 +64,11 @@ physeq_subset_raw_pyr <- subset_samples(physeq_subset_raw, Station_treatment == 
 physeq_subset_raw_tar <- subset_samples(physeq_subset_raw, Station_treatment == "tar")
 physeq_subset_raw_ctr <- subset_samples(physeq_subset_raw, Station_treatment == "control")
 physeq_subset_raw_exu <- subset_samples(physeq_subset_raw, Station_treatment == "exudate")
-physeq_subset_raw_sw <- subset_samples(physeq_subset_raw, Station_treatment == "SW")
-
+physeq_subset_raw_swt <- subset_samples(physeq_subset_raw, Station_treatment == "SW")
 sample_sums(physeq_subset_raw_exp)
 sample_sums(physeq_subset_raw_ddw)
 sample_sums(physeq_subset_raw_ctr)
-sample_sums(physeq_subset_raw_sw)
+sample_sums(physeq_subset_raw_swt)
 
 # Plot ASV Richness (Shannon and Observed)
 plot_richness(physeq_subset_raw, x = "Filter_Type", title = "raw", measures = c("Shannon", "Observed"))
@@ -79,7 +78,7 @@ plot_richness(physeq_subset_raw_pyr, x = "Filter_Type", title = "Pyrene", measur
 plot_richness(physeq_subset_raw_tar, x = "Filter_Type", title = "Tar", measures = c("Shannon", "Observed"))
 plot_richness(physeq_subset_raw_ctr, x = "Filter_Type", title = "Control", measures = c("Shannon", "Observed"))
 plot_richness(physeq_subset_raw_exu, x = "Filter_Type", title = "Exudate", measures = c("Shannon", "Observed"))
-plot_richness(physeq_subset_raw_sw, x = "Filter_Type", title = "Exudate", measures = c("Shannon", "Observed"))
+plot_richness(physeq_subset_raw_swt, x = "Filter_Type", title = "Exudate", measures = c("Shannon", "Observed"))
 
 
 # Taxonomic distribution by Phylum
@@ -89,7 +88,7 @@ plot_bar(physeq_subset_raw_pyr, fill = "Phylum", title = "Pyrene") + facet_wrap(
 plot_bar(physeq_subset_raw_tar, fill = "Phylum", title = "Tar") + facet_wrap(~ Filter_Type+Station_treatment)
 plot_bar(physeq_subset_raw_ctr, fill = "Phylum", title = "Control") + facet_wrap(~ Filter_Type+Station_treatment)
 plot_bar(physeq_subset_raw_exu, fill = "Phylum", title = "Exudate") + facet_wrap(~ Filter_Type+Station_treatment)
-plot_bar(physeq_subset_raw_sw, fill = "Phylum", title = "Seawater T0") + facet_wrap(~ Filter_Type+Station_treatment)
+plot_bar(physeq_subset_raw_swt, fill = "Phylum", title = "Seawater T0") + facet_wrap(~ Filter_Type+Station_treatment)
 
 
 # ------------------------ Extract Top ASVs ------------------------
@@ -110,7 +109,7 @@ top_asvs_per_sample_pyr <- get_top_asvs(physeq_subset_raw_pyr)
 top_asvs_per_sample_tar <- get_top_asvs(physeq_subset_raw_tar)
 top_asvs_per_sample_ctr <- get_top_asvs(physeq_subset_raw_ctr)
 top_asvs_per_sample_exu <- get_top_asvs(physeq_subset_raw_exu)
-top_asvs_per_sample_sw <- get_top_asvs(physeq_subset_raw_sw)
+top_asvs_per_sample_swt <- get_top_asvs(physeq_subset_raw_swt)
 
 # Print top ASVs for each subset
 print(top_asvs_per_sample_exp)
@@ -119,7 +118,7 @@ print(top_asvs_per_sample_pyr)
 print(top_asvs_per_sample_tar)
 print(top_asvs_per_sample_ctr)
 print(top_asvs_per_sample_exu)
-print(top_asvs_per_sample_sw)
+print(top_asvs_per_sample_swt)
 
 # Function to prune taxa based on top ASVs
 prune_top_asvs <- function(top_asvs, physeq_obj) {
@@ -133,7 +132,7 @@ top_asv_taxonomy_pyr <- prune_top_asvs(top_asvs_per_sample_pyr, physeq_subset_ra
 top_asv_taxonomy_tar <- prune_top_asvs(top_asvs_per_sample_tar, physeq_subset_raw_tar)
 top_asv_taxonomy_ctr <- prune_top_asvs(top_asvs_per_sample_ctr, physeq_subset_raw_ctr)
 top_asv_taxonomy_exu <- prune_top_asvs(top_asvs_per_sample_exu, physeq_subset_raw_exu)
-top_asv_taxonomy_sw <- prune_top_asvs(top_asvs_per_sample_sw, physeq_subset_raw_sw)
+top_asv_taxonomy_swt <- prune_top_asvs(top_asvs_per_sample_swt, physeq_subset_raw_swt)
 
 # Function to create a sorted abundance table
 sort_abundance_table <- function(physeq_obj) {
@@ -151,7 +150,7 @@ sorted_taxonomy_pyr <- sort_abundance_table(top_asv_taxonomy_pyr)
 sorted_taxonomy_tar <- sort_abundance_table(top_asv_taxonomy_tar)
 sorted_taxonomy_ctr <- sort_abundance_table(top_asv_taxonomy_ctr)
 sorted_taxonomy_exu <- sort_abundance_table(top_asv_taxonomy_exu)
-sorted_taxonomy_sw <- sort_abundance_table(top_asv_taxonomy_sw)
+sorted_taxonomy_swt <- sort_abundance_table(top_asv_taxonomy_swt)
 
 # View the sorted tables
 head(sorted_taxonomy_exp)
@@ -160,7 +159,7 @@ head(sorted_taxonomy_pyr)
 head(sorted_taxonomy_tar)
 head(sorted_taxonomy_ctr)
 head(sorted_taxonomy_exu)
-head(sorted_taxonomy_sw)
+head(sorted_taxonomy_swt)
 
 # Save sorted tables to CSV
 output_dir <- "/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Jens Data/Results/"
@@ -170,7 +169,7 @@ write.csv(sorted_taxonomy_pyr, file = paste0(output_dir, "sorted_top_asvs_pyr.cs
 write.csv(sorted_taxonomy_tar, file = paste0(output_dir, "sorted_top_asvs_tar.csv"))
 write.csv(sorted_taxonomy_ctr, file = paste0(output_dir, "sorted_top_asvs_ctr.csv"))
 write.csv(sorted_taxonomy_exu, file = paste0(output_dir, "sorted_top_asvs_exu.csv"))
-write.csv(sorted_taxonomy_sw, file = paste0(output_dir, "sorted_top_asvs_sw.csv"))
+write.csv(sorted_taxonomy_swt, file = paste0(output_dir, "sorted_top_asvs_swt.csv"))
 
 # Combine top ASVs into a single CSV file
 top_sorted_taxonomy_combined <- bind_rows(
@@ -180,7 +179,7 @@ top_sorted_taxonomy_combined <- bind_rows(
   sorted_taxonomy_tar,
   sorted_taxonomy_ctr,
   sorted_taxonomy_exu,
-  sorted_taxonomy_sw
+  sorted_taxonomy_swt
 )
 #test----start
 #Combine all sorted taxonomy tables into one
@@ -191,7 +190,7 @@ combined_taxonomy <- bind_rows(
   sorted_taxonomy_tar %>% mutate(Treatment = "tar"),
   sorted_taxonomy_ctr %>% mutate(Treatment = "ctr"),
   sorted_taxonomy_exu %>% mutate(Treatment = "exu"),
-  sorted_taxonomy_sw %>% mutate(Treatment = "sw")
+  sorted_taxonomy_swt %>% mutate(Treatment = "swt")
 )
 
 # Create a list of unique genera with their total abundances by treatment
@@ -284,8 +283,8 @@ rarecurve(t(otu_matrix_subset_raw_exu), step = 500, label = FALSE, main = "Raref
 dev.off()
 
 # For Saltwater subset
-otu_matrix_subset_raw_sw <- otu_table(physeq_subset_raw_sw)
-class(otu_matrix_subset_raw_sw) <- "matrix"
+otu_matrix_subset_raw_swt <- otu_table(physeq_subset_raw_swt)
+class(otu_matrix_subset_raw_swt) <- "matrix"
 png(filename = paste0(output_dir, "rarefaction_curve_saltwater.png"), width = 800, height = 600)
 rarecurve(t(otu_matrix_subset_raw_exu), step = 500, label = FALSE, main = "Rarefaction Curve - Exudate Subset")
 dev.off()
@@ -301,7 +300,7 @@ physeq_subset_filtered_pyr <- prune_taxa(taxa_sums(physeq_subset_raw_pyr) > 10, 
 physeq_subset_filtered_tar <- prune_taxa(taxa_sums(physeq_subset_raw_tar) > 10, physeq_subset_raw_tar)
 physeq_subset_filtered_ctr <- prune_taxa(taxa_sums(physeq_subset_raw_ctr) > 10, physeq_subset_raw_ctr)
 physeq_subset_filtered_exu <- prune_taxa(taxa_sums(physeq_subset_raw_exu) > 10, physeq_subset_raw_exu)
-physeq_subset_filtered_sw <- prune_taxa(taxa_sums(physeq_subset_raw_sw) > 10, physeq_subset_raw_sw)
+physeq_subset_filtered_swt <- prune_taxa(taxa_sums(physeq_subset_raw_swt) > 10, physeq_subset_raw_swt)
 
 # Remove samples with zero total abundance
 physeq_subset_nonzero <- prune_samples(sample_sums(physeq_subset_filtered) > 0, physeq_subset_filtered)
@@ -311,7 +310,7 @@ physeq_subset_nonzero_pyr <- prune_samples(sample_sums(physeq_subset_filtered_py
 physeq_subset_nonzero_tar <- prune_samples(sample_sums(physeq_subset_filtered_tar) > 0, physeq_subset_filtered_tar)
 physeq_subset_nonzero_ctr <- prune_samples(sample_sums(physeq_subset_filtered_ctr) > 0, physeq_subset_filtered_ctr)
 physeq_subset_nonzero_exu <- prune_samples(sample_sums(physeq_subset_filtered_exu) > 0, physeq_subset_filtered_exu)
-physeq_subset_nonzero_sw <- prune_samples(sample_sums(physeq_subset_filtered_sw) > 0, physeq_subset_filtered_sw)
+physeq_subset_nonzero_swt <- prune_samples(sample_sums(physeq_subset_filtered_swt) > 0, physeq_subset_filtered_swt)
 
 # Normalize by relative abundance
 physeq_subset_rel <- transform_sample_counts(physeq_subset_nonzero, function(x) x / sum(x))
@@ -321,7 +320,7 @@ physeq_subset_rel_pyr <- transform_sample_counts(physeq_subset_nonzero_pyr, func
 physeq_subset_rel_tar <- transform_sample_counts(physeq_subset_nonzero_tar, function(x) x / sum(x))
 physeq_subset_rel_ctr <- transform_sample_counts(physeq_subset_nonzero_ctr, function(x) x / sum(x))
 physeq_subset_rel_exu <- transform_sample_counts(physeq_subset_nonzero_exu, function(x) x / sum(x))
-physeq_subset_rel_sw <- transform_sample_counts(physeq_subset_nonzero_sw, function(x) x / sum(x))
+physeq_subset_rel_swt <- transform_sample_counts(physeq_subset_nonzero_swt, function(x) x / sum(x))
 
 # Check number of ASVs/OTUs
 ntaxa(physeq_subset_rel)
@@ -337,7 +336,7 @@ plot_richness(physeq_subset_nonzero_pyr, x = "Filter_Type", title = "Pyrene", me
 plot_richness(physeq_subset_nonzero_tar, x = "Filter_Type", title = "Tar", measures = c("Shannon", "Simpson"))
 plot_richness(physeq_subset_nonzero_ctr, x = "Filter_Type", title = "Control", measures = c("Shannon", "Simpson"))
 plot_richness(physeq_subset_nonzero_exu, x = "Filter_Type", title = "Exudates", measures = c("Shannon", "Simpson"))
-plot_richness(physeq_subset_nonzero_sw, x = "Filter_Type", title = "Saltwater", measures = c("Shannon", "Simpson"))
+plot_richness(physeq_subset_nonzero_swt, x = "Filter_Type", title = "Saltwater", measures = c("Shannon", "Simpson"))
 
 # Wilcoxon test for alpha diversity (Shannon index) across subsets
 sample_data(physeq_subset_nonzero)$Filter_Type <- factor(sample_data(physeq_subset_nonzero)$Filter_Type)
@@ -444,7 +443,7 @@ plot_heatmap(physeq_subset_nonzero_pyr, method = "NMDS", distance = "bray", taxa
 plot_heatmap(physeq_subset_nonzero_tar, method = "NMDS", distance = "bray", taxa.label = "Genus", title="Tar",sample.label = "Station_treatment")
 plot_heatmap(physeq_subset_nonzero_ctr, method = "NMDS", distance = "bray", taxa.label = "Genus", title="Control",sample.label = "Station_treatment")
 plot_heatmap(physeq_subset_nonzero_exu, method = "NMDS", distance = "bray", taxa.label = "Genus", title="Exudates",sample.label = "Station_treatment")
-plot_heatmap(physeq_subset_nonzero_sw, method = "NMDS", distance = "bray", taxa.label = "Genus", title="Saltwater",sample.label = "Station_treatment")
+plot_heatmap(physeq_subset_nonzero_swt, method = "NMDS", distance = "bray", taxa.label = "Genus", title="Saltwater",sample.label = "Station_treatment")
 
 # ------------------------ Final Data Extraction and Plot Saving ------------------------
 
@@ -493,8 +492,8 @@ ggsave(filename = paste0(output_dir, "asv_richness_exudate.png"),
                             measures = c("Shannon", "Observed")),
        width = 8, height = 6)
 
-ggsave(filename = paste0(output_dir, "asv_richness_sw.png"), 
-       plot = plot_richness(physeq_subset_raw_sw, x = "Filter_Type", title = "ASV Richness - Saltwater", 
+ggsave(filename = paste0(output_dir, "asv_richness_swt.png"), 
+       plot = plot_richness(physeq_subset_raw_swt, x = "Filter_Type", title = "ASV Richness - Saltwater", 
                             measures = c("Shannon", "Observed")),
        width = 8, height = 6)
 # ------------------------ 2. Saving taxonomic distribution plots by Phylum ------------------------
@@ -530,7 +529,7 @@ ggsave(filename = paste0(output_dir, "taxonomic_distribution_exudate.png"),
        width = 24, height = 12, dpi = 300)
 
 ggsave(filename = paste0(output_dir, "taxonomic_distribution_saltwater.png"), 
-       plot = plot_bar(physeq_subset_rel_sw, fill = "Phylum", title = "Taxonomic Distribution - Saltwater") + 
+       plot = plot_bar(physeq_subset_rel_swt, fill = "Phylum", title = "Taxonomic Distribution - Saltwater") + 
          facet_wrap(~ Filter_Type+Station_treatment),
        width = 24, height = 12, dpi = 300)
 
@@ -541,6 +540,10 @@ ord_bray <- ordinate(physeq_subset_rel, method = "NMDS", distance = "bray")
 ord_bray_exp <- ordinate(physeq_subset_rel_exp, method = "NMDS", distance = "bray")
 ord_bray_ctr <- ordinate(physeq_subset_rel_ctr, method = "NMDS", distance = "bray")
 ord_bray_ddw <- ordinate(physeq_subset_rel_ddw, method = "NMDS", distance = "bray")
+ord_bray_tar <- ordinate(physeq_subset_rel_tar, method = "NMDS", distance = "bray")
+ord_bray_pyr <- ordinate(physeq_subset_rel_pyr, method = "NMDS", distance = "bray")
+ord_bray_exu <- ordinate(physeq_subset_rel_exu, method = "NMDS", distance = "bray")
+ord_bray_swt <- ordinate(physeq_subset_rel_swt, method = "NMDS", distance = "bray")
 
 ggsave(filename = paste0(output_dir, "ordination_nmds_bray_subset_rel_filter_type.png"),
        plot = plot_ordination(physeq_subset_rel, ord_bray, color = "Filter_Type") + 
@@ -560,6 +563,26 @@ ggsave(filename = paste0(output_dir, "ordination_nmds_bray_ctr.png"),
 
 ggsave(filename = paste0(output_dir, "ordination_nmds_bray_ddw.png"),
        plot_ordination(physeq_subset_rel_ddw, ord_bray_ddw, color = "Station_treatment", shape = "Filter_Type") + geom_point(size = 3) + theme_minimal()+labs(title = "DDW"),
+       width = 8, height = 6)
+
+ggsave(filename = paste0(output_dir, "ordination_nmds_bray_tar.png"),
+       plot_ordination(physeq_subset_rel_tar, ord_bray_tar, color = "Station_treatment", shape = "Filter_Type") 
+       + geom_point(size = 3) + theme_minimal()+labs(title = "Tar"),
+       width = 8, height = 6)
+
+ggsave(filename = paste0(output_dir, "ordination_nmds_bray_pyr.png"),
+       plot_ordination(physeq_subset_rel_pyr, ord_bray_pyr, color = "Station_treatment", shape = "Filter_Type")
+       + geom_point(size = 3) + theme_minimal()+labs(title = "Pyr"),
+       width = 8, height = 6)
+
+ggsave(filename = paste0(output_dir, "ordination_nmds_bray_exu.png"),
+       plot_ordination(physeq_subset_rel_exu, ord_bray_exu, color = "Station_treatment", shape = "Filter_Type") 
+       + geom_point(size = 3) + theme_minimal()+labs(title = "Exu"),
+       width = 8, height = 6)
+
+ggsave(filename = paste0(output_dir, "ordination_nmds_bray_swt.png"),
+       plot_ordination(physeq_subset_rel_swt, ord_bray_swt, color = "Station_treatment", shape = "Filter_Type") 
+       + geom_point(size = 3) + theme_minimal()+labs(title = "Swt"),
        width = 8, height = 6)
 
 # CCA ordination
@@ -625,8 +648,8 @@ taxonomy_data_exu <- tax_table(top_asv_taxonomy_exu)
 taxonomy_df_exu <- as.data.frame(taxonomy_data_exu)
 write.csv(taxonomy_df_exu, file = paste0(output_dir, "top_asvs_exudate.csv"))
 
-taxonomy_data_sw <- tax_table(top_asv_taxonomy_sw)
-taxonomy_df_sw <- as.data.frame(taxonomy_data_sw)
+taxonomy_data_swt <- tax_table(top_asv_taxonomy_swt)
+taxonomy_df_swt <- as.data.frame(taxonomy_data_swt)
 write.csv(taxonomy_df_exu, file = paste0(output_dir, "top_asvs_exudate.csv"))
 
 # Combine top ASVs into a single CSV file
@@ -637,7 +660,7 @@ top_asvs_combined <- bind_rows(
   taxonomy_df_tar,
   taxonomy_df_ctr,
   taxonomy_df_exu,
-  taxonomy_df_sw
+  taxonomy_df_swt
 )
 
 # Save the combined top ASVs
@@ -675,7 +698,7 @@ ggsave(filename = paste0(output_dir, "heatmap_exudate.png"),
                            taxa.label = "Genus", title = "Heatmap - Exudate", sample.label = "Station_treatment"),
        width = 8, height = 6)
 ggsave(filename = paste0(output_dir, "heatmap_saltwater.png"),
-       plot = plot_heatmap(physeq_subset_filtered_sw, method = "NMDS", distance = "bray", 
+       plot = plot_heatmap(physeq_subset_filtered_swt, method = "NMDS", distance = "bray", 
                            taxa.label = "Genus", title = "Heatmap - Exudate", sample.label = "Station_treatment"),
        width = 8, height = 6)
 
