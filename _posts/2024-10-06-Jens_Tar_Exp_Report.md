@@ -100,6 +100,7 @@
 ##Pyrene Group    
 - ![Taxonomic Distribution Pyrene](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_pyrene.png)  
   Description: Taxonomic distribution in pyrene samples.
+
 ###Top Unique ASVs in the Group:
 
 |Treatment|Genus                  |Total_Abundance|
