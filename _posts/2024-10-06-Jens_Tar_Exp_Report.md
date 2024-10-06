@@ -2,9 +2,16 @@
 layout: post
 title: Jens Tar Experiment Phyloseq Results
 date: '2024-10-06'
-categories: Restuts
+categories: Results
 tags: Tar
 ---
+# Jen's Tar Experiment - Results Discussion
+## Introduction
+The primary objective of Jen's Tar Experiment was to investigate microbial diversity across various environmental treatments, specifically assessing ASV richness, taxonomic distribution, and microbial community structure. The experiment analyzed different environmental treatments including tar, pyrene, DDW (distilled water), control, and exudate using a series of ecological and statistical analyses such as NMDS and CCA ordinations, indicator species, and differential abundance.
+
+## Setup
+"During the tar experiment, a natural pelagic community form the EMS was incubated with three potential carbon sources separately, for 48 h in 5 L borosilicate glass bottles. In total 16 bottles were filled with pelagic seawater (prefiltered 100 μm). Four different treatments were applied to four bottles (quadruplicates), respectively: I) Tar ball amendment [final: 0.5 g tar L-1]; II) Pyrene amendment [final: 170 ng L-1]; III) Prochlorococcus MED4 exudate [final: 125 mL L-1]; IV) no amendment (control)." There was also a negative control DDW for which there are only replicates, In total 36 S16.  amplicon sequence readings were expected, 34 wherein the files, 2 are missing (1 sample control,  1 sample exudate), and 3 unamended saltwater samples sampled at the experiment's beginning.
+
 
 # Ordination Plots
 ## Canonical Correspondence 
