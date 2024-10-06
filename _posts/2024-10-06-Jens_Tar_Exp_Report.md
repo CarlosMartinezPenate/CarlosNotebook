@@ -7,7 +7,7 @@ tags: Tar
 ---
 
 # Ordination Plots
-##Canonical Correspondence 
+## Canonical Correspondence 
 - ![Ordination CCA](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/ordination_cca.png)  
   Data Source: Relative ASV Abundance - Main subset
   
@@ -15,7 +15,7 @@ tags: Tar
   Data Source: Relative Abundance Experimental Subset.
   
   
-##Nonparametric Multivariable Analysis
+## Nonparametric Multivariable Analysis
 
 - ![Ordination NMDS Bray Subset Relative Treatment](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/ordination_nmds_bray_subset_rel_treatment.png)  
   Data Source: Relative ASV Abundance - Main subset.
@@ -24,12 +24,12 @@ tags: Tar
   Data Source: Relative Abundance Experimental Subset.
   
 ## Taxonomic Distribution Plots
-###Control Group
+### Control Group
   
 - ![Taxonomic Distribution Control](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_control.png)  
   Description: Taxonomic distribution in control samples. 
 
-###Top Unique ASVs in the Group:
+### Top Unique ASVs in the Group:
    
 |Treatment|Genus                  |Total_Abundance|
 |---------|-----------------------|---------------|
@@ -43,12 +43,12 @@ tags: Tar
 |ctr      |Glaciecola             |3207           |
 |ctr      |Acinetobacter          |2149           |
 
-##DDW Group
+## DDW Group
   
 - ![Taxonomic Distribution Distilled Deionized Water (DDW)](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_ddw.png)  
   Description: Taxonomic distribution in DDW samples.
 
-###Top Unique ASVs in the Group:
+### Top Unique ASVs in the Group:
 
 |Treatment|Genus                  |Total_Abundance|
 |---------|-----------------------|---------------|
@@ -57,12 +57,12 @@ tags: Tar
 |ddw      |Clade Ia               |211            |
 |ddw      |Prochlorococcus MIT9313|42             |
   
-##Experimental Group  
+## Experimental Group  
 
 - ![Taxonomic Distribution Experimental](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_exp.png)  
   Description: Taxonomic distribution in experimental samples.
   
-###Top Unique ASVs in the Group:
+### Top Unique ASVs in the Group:
 
 |Treatment|Genus                  |Total_Abundance|
 |---------|-----------------------|---------------|
@@ -86,12 +86,12 @@ tags: Tar
 |exp      |Neptuniibacter         |2641           |
 |exp      |Oleibacter             |1892           |
 
-##Exudate Group  
+## Exudate Group  
   
 - ![Taxonomic Distribution Exudate](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_exudate.png)  
   Description: Taxonomic distribution in exudate samples.
   
-###Top Unique ASVs in the Group:
+### Top Unique ASVs in the Group:
 
 |Treatment|Genus                  |Total_Abundance|
 |---------|-----------------------|---------------|
@@ -105,11 +105,11 @@ tags: Tar
 |exu      |Prochlorococcus MIT9313|612            |
 
 
-##Pyrene Group    
+## Pyrene Group    
 - ![Taxonomic Distribution Pyrene](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_pyrene.png)  
   Description: Taxonomic distribution in pyrene samples.
 
-###Top Unique ASVs in the Group:
+### Top Unique ASVs in the Group:
 
 |Treatment|Genus                  |Total_Abundance|
 |---------|-----------------------|---------------|
@@ -124,11 +124,11 @@ tags: Tar
 |pyr      |NA                     |1721           |
 
 
-##Saltwater Group    
+## Saltwater Group    
 - ![Taxonomic Distribution Saltwater](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_saltwater.png)  
   Description: Taxonomic distribution in saltwater samples.
 
-###Top Unique ASVs in the Group:
+### Top Unique ASVs in the Group:
 
 |Treatment|Genus                  |Total_Abundance|
 |---------|-----------------------|---------------|
@@ -137,11 +137,11 @@ tags: Tar
 |swt      |Synechococcus CC9902   |12628          |
 |swt      |Acinetobacter          |6059           |
 
-##Tar Group    
+## Tar Group    
 - ![Taxonomic Distribution Tar](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_tar.png)  
   Description: Taxonomic distribution in tar samples.
 
-###Top Unique ASVs in the Group: 
+### Top Unique ASVs in the Group: 
     
 |Treatment|Genus                  |Total_Abundance|
 |---------|-----------------------|---------------|
