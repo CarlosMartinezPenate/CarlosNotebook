@@ -1,27 +1,35 @@
-# Ordination Plots
-##Canonical Correspondence 
-![Ordination CCA](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/ordination_cca.png)  
-Data Source: Relative ASV Abundance - Main subset
-  
-![Ordination CCA Experimental](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/ordination_cca_exp.png)  
-Data Source: Relative Abundance Experimental Subset.
-  
-  
-##Nonparametric Multivariable Analysis
+---
+layout: post
+title: Jens Tar Experiment Phyloseq Results
+date: '2024-10-06'
+categories: Restuts
+tags: Tar
+---
 
-![Ordination NMDS Bray Subset Relative Treatment](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/ordination_nmds_bray_subset_rel_treatment.png)  
+# Ordination Plots
+## Canonical Correspondence 
+- ![Ordination CCA](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/ordination_cca.png)  
+  Data Source: Relative ASV Abundance - Main subset
+  
+- ![Ordination CCA Experimental](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/ordination_cca_exp.png)  
+  Data Source: Relative Abundance Experimental Subset.
+  
+  
+## Nonparametric Multivariable Analysis
+
+- ![Ordination NMDS Bray Subset Relative Treatment](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/ordination_nmds_bray_subset_rel_treatment.png)  
   Data Source: Relative ASV Abundance - Main subset.
    
-![Ordination NMDS Bray Experimental](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/ordination_nmds_bray_exp.png)  
+- ![Ordination NMDS Bray Experimental](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/ordination_nmds_bray_exp.png)  
   Data Source: Relative Abundance Experimental Subset.
   
 ## Taxonomic Distribution Plots
-###Control Group
+### Control Group
   
-![Taxonomic Distribution Control](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_control.png)  
+- ![Taxonomic Distribution Control](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_control.png)  
   Description: Taxonomic distribution in control samples. 
 
-###Top Unique ASVs in the Group:
+### Top Unique ASVs in the Group:
    
 |Treatment|Genus                  |Total_Abundance|
 |---------|-----------------------|---------------|
@@ -35,12 +43,12 @@ Data Source: Relative Abundance Experimental Subset.
 |ctr      |Glaciecola             |3207           |
 |ctr      |Acinetobacter          |2149           |
 
-##DDW Group
+## DDW Group
   
-![Taxonomic Distribution Distilled Deionized Water (DDW)](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_ddw.png)  
+- ![Taxonomic Distribution Distilled Deionized Water (DDW)](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_ddw.png)  
   Description: Taxonomic distribution in DDW samples.
 
-###Top Unique ASVs in the Group:
+### Top Unique ASVs in the Group:
 
 |Treatment|Genus                  |Total_Abundance|
 |---------|-----------------------|---------------|
@@ -49,12 +57,12 @@ Data Source: Relative Abundance Experimental Subset.
 |ddw      |Clade Ia               |211            |
 |ddw      |Prochlorococcus MIT9313|42             |
   
-##Experimental Group  
+## Experimental Group  
 
-![Taxonomic Distribution Experimental](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_exp.png)  
+- ![Taxonomic Distribution Experimental](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_exp.png)  
   Description: Taxonomic distribution in experimental samples.
   
-###Top Unique ASVs in the Group:
+### Top Unique ASVs in the Group:
 
 |Treatment|Genus                  |Total_Abundance|
 |---------|-----------------------|---------------|
@@ -78,12 +86,12 @@ Data Source: Relative Abundance Experimental Subset.
 |exp      |Neptuniibacter         |2641           |
 |exp      |Oleibacter             |1892           |
 
-##Exudate Group  
+## Exudate Group  
   
-![Taxonomic Distribution Exudate](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_exudate.png)  
+- ![Taxonomic Distribution Exudate](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_exudate.png)  
   Description: Taxonomic distribution in exudate samples.
   
-###Top Unique ASVs in the Group:
+### Top Unique ASVs in the Group:
 
 |Treatment|Genus                  |Total_Abundance|
 |---------|-----------------------|---------------|
@@ -97,11 +105,11 @@ Data Source: Relative Abundance Experimental Subset.
 |exu      |Prochlorococcus MIT9313|612            |
 
 
-##Pyrene Group    
-![Taxonomic Distribution Pyrene](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_pyrene.png)  
+## Pyrene Group    
+- ![Taxonomic Distribution Pyrene](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_pyrene.png)  
   Description: Taxonomic distribution in pyrene samples.
 
-###Top Unique ASVs in the Group:
+### Top Unique ASVs in the Group:
 
 |Treatment|Genus                  |Total_Abundance|
 |---------|-----------------------|---------------|
@@ -116,11 +124,11 @@ Data Source: Relative Abundance Experimental Subset.
 |pyr      |NA                     |1721           |
 
 
-##Saltwater Group    
-![Taxonomic Distribution Saltwater](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_saltwater.png)  
+## Saltwater Group    
+- ![Taxonomic Distribution Saltwater](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_saltwater.png)  
   Description: Taxonomic distribution in saltwater samples.
 
-###Top Unique ASVs in the Group:
+### Top Unique ASVs in the Group:
 
 |Treatment|Genus                  |Total_Abundance|
 |---------|-----------------------|---------------|
@@ -129,11 +137,11 @@ Data Source: Relative Abundance Experimental Subset.
 |swt      |Synechococcus CC9902   |12628          |
 |swt      |Acinetobacter          |6059           |
 
-##Tar Group    
-![Taxonomic Distribution Tar](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_tar.png)  
+## Tar Group    
+- ![Taxonomic Distribution Tar](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/taxonomic_distribution_tar.png)  
   Description: Taxonomic distribution in tar samples.
 
-###Top Unique ASVs in the Group: 
+### Top Unique ASVs in the Group: 
     
 |Treatment|Genus                  |Total_Abundance|
 |---------|-----------------------|---------------|
@@ -154,25 +162,25 @@ Data Source: Relative Abundance Experimental Subset.
 |tar      |Oleibacter             |1892           |
 
 ## Heatmap Plots
-![Heatmap Control](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/heatmap_control.png)  
+- ![Heatmap Control](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/heatmap_control.png)  
   Description: Heatmap of control samples, source: filtered (low counts (<10) asv trimmed).
   
-![Heatmap Distilled Deionized Water (DDW)](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/heatmap_ddw.png)  
+- ![Heatmap Distilled Deionized Water (DDW)](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/heatmap_ddw.png)  
   Description: Heatmap of DDW samples, source: filtered (low counts (<10) asv trimmed).
   
-![Heatmap Experimental](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/heatmap_exp.png)  
+- ![Heatmap Experimental](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/heatmap_exp.png)  
   Description: Heatmap of experimental samples, source: filtered (low counts (<10) asv trimmed).
   
-![Heatmap Exudate](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/heatmap_exudate.png)  
+- ![Heatmap Exudate](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/heatmap_exudate.png)  
   Description: Heatmap of exudate samples, source: filtered (low counts (<10) asv trimmed).
   
-![Heatmap Pyrene](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/heatmap_pyrene.png)  
+- ![Heatmap Pyrene](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/heatmap_pyrene.png)  
   Description: Heatmap of pyrene samples, source: filtered (low counts (<10) asv trimmed).
   
-![Heatmap Saltwater](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/heatmap_saltwater.png)  
+- ![Heatmap Saltwater](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/heatmap_saltwater.png)  
   Description: Heatmap of saltwater samples, source: filtered (low counts (<10) asv trimmed).
   
-![Heatmap Tar](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/heatmap_tar.png)  
+- ![Heatmap Tar](https://raw.githubusercontent.com/DieGrungeDie/CarlosNotebook/refs/heads/main/_images/Jens_tar_exeperiment_results_images/heatmap_tar.png)  
   Description: Heatmap of tar samples, source: filtered (low counts (<10) asv trimmed).
   
 # Experiment Data Tables
