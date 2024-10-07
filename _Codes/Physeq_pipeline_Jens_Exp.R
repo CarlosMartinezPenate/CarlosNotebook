@@ -14,6 +14,9 @@ lapply(required_pkgs, library, character.only = TRUE)
 
 # ------------------------ 2. Loading and Exploring Data ------------------------
 
+# Setting a output directory
+output_dir <- "/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Jens Data/Results/"
+
 # Load ASV, Taxonomy, and Metadata tables from .csv files
 asv_table <- read.csv("ASV_jenwavsforma.csv", row.names = 1, check.names = FALSE)
 taxonomy_table <- read.csv("Taxonomy_asv_Jenmodultra.csv", row.names = 1)
@@ -699,7 +702,7 @@ ggsave(filename = paste0(output_dir, "heatmap_exudate.png"),
        width = 8, height = 6)
 ggsave(filename = paste0(output_dir, "heatmap_saltwater.png"),
        plot = plot_heatmap(physeq_subset_filtered_swt, method = "NMDS", distance = "bray", 
-                           taxa.label = "Genus", title = "Heatmap - Exudate", sample.label = "Station_treatment"),
+                           taxa.label = "Genus", title = "Heatmap - Saltwater", sample.label = "Station_treatment"),
        width = 8, height = 6)
 
 # ------------------------ End of Data Extraction ------------------------
