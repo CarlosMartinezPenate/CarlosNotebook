@@ -15,6 +15,7 @@ lapply(required_pkgs, library, character.only = TRUE)
 # ------------------------ 2. Loading and Exploring Data ------------------------
 
 # Setting a output directory
+setwd("/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Jens Data/")
 output_dir <- "/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Jens Data/Results/"
 
 # Load ASV, Taxonomy, and Metadata tables from .csv files
@@ -68,6 +69,7 @@ physeq_subset_raw_tar <- subset_samples(physeq_subset_raw, Station_treatment == 
 physeq_subset_raw_ctr <- subset_samples(physeq_subset_raw, Station_treatment == "control")
 physeq_subset_raw_exu <- subset_samples(physeq_subset_raw, Station_treatment == "exudate")
 physeq_subset_raw_swt <- subset_samples(physeq_subset_raw, Station_treatment == "SW")
+
 sample_sums(physeq_subset_raw_exp)
 sample_sums(physeq_subset_raw_ddw)
 sample_sums(physeq_subset_raw_ctr)
@@ -81,6 +83,7 @@ plot_richness(physeq_subset_raw_pyr, x = "Filter_Type", title = "Pyrene", measur
 plot_richness(physeq_subset_raw_tar, x = "Filter_Type", title = "Tar", measures = c("Shannon", "Observed"))
 plot_richness(physeq_subset_raw_ctr, x = "Filter_Type", title = "Control", measures = c("Shannon", "Observed"))
 plot_richness(physeq_subset_raw_exu, x = "Filter_Type", title = "Exudate", measures = c("Shannon", "Observed"))
+plot_richness(physeq_subset_raw_swt, x = "Filter_Type", title = "Exudate", measures = c("Shannon", "Observed"))
 plot_richness(physeq_subset_raw_swt, x = "Filter_Type", title = "Exudate", measures = c("Shannon", "Observed"))
 
 
@@ -355,7 +358,21 @@ ord_bray <- ordinate(physeq_subset_rel, method = "NMDS", distance = "bray")
 
 # Plot NMDS ordination colored by Filter Type and Station treatment
 plot_ordination(physeq_subset_rel, ord_bray, color = "Filter_Type") + geom_point(size = 3) + theme_minimal()
-plot_ordination(physeq_subset_rel, ord_bray, color = "Station_treatment", shape = "Filter_Type") + geom_point(size = 3) + theme_minimal()
+
+# Manually specify shapes for up to 7 treatments
+nmds_plot_rel <- 
+  plot_ordination(physeq_subset_rel, ord_bray, color = "Station_treatment", shape = "Station_treatment") +
+  geom_point(size = 3) +
+  theme_minimal() +
+  ggtitle("Tar Experiment only Samples") +
+  geom_text(aes(label = ifelse(sample_data(physeq_subset_rel)$Station_treatment == "LAB", sample_names(physeq_subset_rel), "")),
+            check_overlap = TRUE, vjust = -0.5) +
+  scale_shape_manual(values = c(16, 17, 15, 3, 7, 8, 1))  # Manually define 7 shapes
+
+# Save the plot as a PNG file
+ggsave(filename = paste0(output_dir, "NMDS_ordination_raw_experiment.png"),
+       plot = nmds_plot_rel,
+       width = 8, height = 6)
 
 # Run PERMANOVA on Bray-Curtis dissimilarity matrix
 dist_bray <- phyloseq::distance(physeq_subset_rel, method = "bray")
