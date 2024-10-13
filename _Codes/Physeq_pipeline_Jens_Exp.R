@@ -63,10 +63,10 @@ physeq_subset_raw <- subset_samples(physeq,
 
 # Subset samples into control and experimental groups
 physeq_subset_raw_ddw <- subset_samples(physeq_subset_raw, Station_treatment == "DDW")
-physeq_subset_raw_exp <- subset_samples(physeq_subset_raw, Station_treatment %in% c("pyrene", "exudate","tar"))
+physeq_subset_raw_exp <- subset_samples(physeq_subset_raw, Station_treatment %in% c("pyrene", "exudate","tar","control","DDW"))
 physeq_subset_raw_pyr <- subset_samples(physeq_subset_raw, Station_treatment == "pyrene")
 physeq_subset_raw_tar <- subset_samples(physeq_subset_raw, Station_treatment == "tar")
-physeq_subset_raw_ctr <- subset_samples(physeq_subset_raw, Station_treatment == "control")
+physeq_subset_raw_ctr <- subset_samples(physeq_subset_raw, Station_treatment %in% c("control","DDW"))
 physeq_subset_raw_exu <- subset_samples(physeq_subset_raw, Station_treatment == "exudate")
 physeq_subset_raw_swt <- subset_samples(physeq_subset_raw, Station_treatment == "SW")
 
