@@ -149,6 +149,16 @@ The survival table can be found here:
 * Low reads <= 1000
 * High reads >= 10000
 
+| Category     | Count |
+| ------------ | ----- |
+| Zero_Reads   | 7     |
+| Low_Reads    | 23    |
+| Medium_Reads | 38    |
+| High_Reads   | 231   |
+| Total_Reads  | 299   |
+
+[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/read_counts_summary_1_1.csv]()
+
 
 | Step         | Total_Reads | Percentage_Retained |
 |--------------|-------------|----------------------|
@@ -235,6 +245,16 @@ The survival table can be found here:
 * Low reads <= 1000
 * High reads >= 10000
 
+| Category     | Count |
+| ------------ | ----- |
+| Zero_Reads   | 9     |
+| Low_Reads    | 23    |
+| Medium_Reads | 26    |
+| High_Reads   | 243   |
+| Total_Reads  | 301   |
+
+[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/read_counts_summary_5_5.csv]()
+
 
 | Step             | Total_Reads | Percentage_Retained |
 | ---------------- | ----------- | ------------------- |
@@ -270,3 +290,14 @@ To identify and explore the different read counts, metadata related to the readi
 
 ### High count samples (reads > 1000):
 [/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/high_read_samples_merged_meta_5_5.csv]()
+
+
+
+
+
+
+
+
+
+
+
