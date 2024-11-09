@@ -6,8 +6,33 @@ categories: Bioinformatic Pipelines
 tags: DADA2
 ---
 
-#Quality Control for Tar experiment S16 amplicon reads
+# Quality Control for Tar experiment S16 amplicon reads
+#### Plot Summary for read counts:
 
+This is a graph showing how the values for the parameter MaxEE and TruncQ influence the read distribution of the Survival Table, discussed further in the body of the report:
+
+![/Users/carlosmartinez/Documents/Jens_raw_data/QC_readcount_plot.png](/Users/carlosmartinez/Documents/Jens_raw_data/QC_readcount_plot.png)
+
+#### Tabulated Summary:
+
+This graph shows the retention of reads at the filtering, merging, a chimeral removal step of the DADA2 Pipeline, for the different values of the parameters MaxEE and TruncQ: 
+
+![](/Users/carlosmartinez/Documents/Jens_raw_data/Survival_Retained_Reads_Sum_Plot.png)
+After the chimera removal, the final retention is **24%** for the more stringent trimming and filtering and 55% for the more relaxed. 
+
+#### Plot summary for read length:
+
+The plot shows the different read lengths obtained depending on the MaxEE and TrunQ parameters used:
+
+![](/Users/carlosmartinez/Documents/Jens_raw_data/Read _len_dist_plot_sun.png)
+
+All trimming and filtering treatments resulted in a **377 nucleotide peak** length 
+
+* MaxEE = c(1,1) + TruncQ = 13, with an average read length of **340** nucleotides and a total of **2.6 Million reads**
+* MaxEE = c(1,1) + TruncQ = 2, with an average read length of **329** nucleotides and a total of **5.0 Million reads**
+* MaxEE = c(5,5) + TruncQ = 2, with an average read length of **329** nucleotides and a total of **6.0 Million reads**
+
+# DADA2 Pipeline: 
 The DADA2 Pipeline (1.32.0) was applied to 608 fastq files, corresponding to 304 samples (Reverse and Forward reads).
 
 files can be found in: [/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Jens_raw_data]()
@@ -23,7 +48,7 @@ Additionally, the R package ShortRead (1.62.0) was used to inspect the lengths o
 
 **Initial Read Lengths:**
 
-* Forward and reverse reads are initially 301 nucleotides each.
+* Forward and reverse reads are initially **301** nucleotides each.
 
 ### TrimLeft parameter
 
@@ -61,30 +86,30 @@ This should be enough overlap for DADA to infer (DADA2 recommends at least 12bps
 
 ### MaxEE Parameter Selection
 
-`out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(220,200),
+`out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(250,200),
                      maxN=0, maxEE=c(1,1), truncQ=2, rm.phix=TRUE, trimLeft=c(20,18),
                      compress=TRUE, multithread=TRUE)`
 
-MaxEE parameter: reads with higher than maxEE "expected errors" will be discarded, default is Inf (no filtering), several combinations were tried, to evaluate the effect of this parameter in the final survival table: 
+MaxEE parameter: reads with higher than maxEE "expected errors" will be discarded, default is Inf (no filtering), several combinations were tried, to evaluate the effect of this parameter in the final survival table, **TruncQ = 2 in all cases**: 
 
 * MaxEE = c(0,0)
 No reads passed the filter.
 * MaxEE = c(0,1)
 No reads passed the filter.
 * MaxEE = c(1,1)
-Some input samples had no reads pass the filter: 45, 104, 241, 263, and 278. 
+Some input samples had no reads pass the filter: **45, 104, 241, 263, and 278.** 
 * MaxEE = c(1,2)
-Some input samples had no reads pass the filter: 45, 104, 241, 263, and 278.
+Some input samples had no reads pass the filter: **45, 104, 241, 263, and 278.**
 * MaxEE = c(2,2)
-Some input samples had no reads pass the filter: 45, 104, 241, 263, and 278.
+Some input samples had no reads pass the filter: **45, 104, 241, 263, and 278.**
 * maxEE=c(5,5)
-Some input samples had no reads pass the filter: 45, 104, 241.
+Some input samples had no reads pass the filter: **45, 104, 241.**
 * maxEE=c(10,10)
-Some input samples had no reads pass the filter: 241.
+Some input samples had no reads pass the filter: **241.**
 
 #### Samples with cero reads after trimming:
 
-In all cases, at least 1 of the samples doesn't pass the filter, we will explore these samples further from the extraction file found at: [/Users/carlosmartinez/Documents/Jens_raw_data/sample_randomiz_2022_extraction_with_Diklas_lab_controls.xlsx]():
+In all cases, at least 1 of the samples doesn't pass the filter, we will explore these samples further from the extraction file found at: [/Users/carlosmartinez/Documents/Jens_raw_data/sample_randomiz_2022_extraction_with_Diklas_lab_controls.xlsx](/Users/carlosmartinez/Documents/Jens_raw_data/sample_randomiz_2022_extraction_with_Diklas_lab_controls.xlsx):
 
 | ID  | Station Treatment         |  Qubit_HS [ng/uL] | Notes extraction                   |
 | --- | ------------------------- |  ---------------- | ---------------------------------- |
@@ -108,7 +133,7 @@ Taking a look at the Quality Profile of these 6 samples to try and understand th
 The quality of the reads is not great, making sense that they were rejected in the trimming process. Also, the number of reads is pretty low. Sample 241 corresponds to an exudate treatment and has a fairly small number of reads. It might be worth it to relax the trimming in the future, although the reverse reads for this sample would need a stricter truncation. 
 
 These files were ***manually removed from the pipeline*** by moving them into a separate folder, which can be found here:
-[/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Jens_raw_data/rejected_reads]()
+[/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Jens_raw_data/rejected_reads](/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Jens_raw_data/rejected_reads)
 
 
 
@@ -120,8 +145,8 @@ Removed reads: 45, 104, 241, 263, and 278.
 
 After removing the files and rerunning the pipeline with MaxEE = (1,1), the quality profile plots were explored once again, the report can be found in:
 
-[/Users/carlosmartinez/Documents/Jens_raw_data/Fil_quality_profile_plots_fwd_1_1.pdf]()
-[/Users/carlosmartinez/Documents/Jens_raw_data/Fil_quality_profile_rev_1_1.pdf]()
+[/Users/carlosmartinez/Documents/Jens_raw_data/Fil_quality_profile_plots_fwd_1_1.pdf](/Users/carlosmartinez/Documents/Jens_raw_data/Fil_quality_profile_plots_fwd_1_1.pdf)
+[/Users/carlosmartinez/Documents/Jens_raw_data/Fil_quality_profile_rev_1_1.pdf](/Users/carlosmartinez/Documents/Jens_raw_data/Fil_quality_profile_rev_1_1.pdf)
 
 
 ## Error rate inspection:
@@ -142,7 +167,7 @@ Files were dereplicated, samples inferred, and the pair reads merged, sequence t
 ## Survival table analysis: 
  
 The survival table can be found here:
-[/Users/carlosmartinez/Documents/Jens_raw_data/Survival_carlos_1_1.csv]()
+[/Users/carlosmartinez/Documents/Jens_raw_data/Survival_carlos_1_1.csv](/Users/carlosmartinez/Documents/Jens_raw_data/Survival_carlos_1_1.csv)
 
 #### Survival summary:
 
@@ -157,19 +182,19 @@ The survival table can be found here:
 | High_Reads   | 231   |
 | Total_Reads  | 299   |
 
-[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/read_counts_summary_1_1.csv]()
+[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/read_counts_summary_1_1.csv](/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/read_counts_summary_1_1.csv)
 
 
-| Step         | Total_Reads | Percentage_Retained |
-|--------------|-------------|----------------------|
-| Input        | 10,873,485  | 100.00000            |
-| Filtered     | 7,674,418   | 70.57919             |
-| DenoisedF    | 7,462,914   | 68.63406             |
-| DenoisedR    | 7,512,073   | 69.08616             |
-| Merged       | 5,204,395   | 47.86317             |
-| NonChimeric  | 5,019,768   | 46.16522             |
+| Step             | Total_Reads | Percentage_Retained |
+| ---------------- | ----------- | ------------------- |
+| Input            | 10873485    | 100                 |
+| Filtered         | 7674418     | 70.58               |
+| Denoised Forward | 7462914     | 68.63               |
+| Denoised Reverse | 7512073     | 69.09               |
+| Merged           | 5204395     | 47.86               |
+| Non-Chimeric     | 5019768     | 46.17               |
 
-[/Users/carlosmartinez/Documents/Jens_raw_data/Survival_Summary_1_1.csv]()
+[/Users/carlosmartinez/Documents/Jens_raw_data/Survival_Summary_1_1.csv](/Users/carlosmartinez/Documents/Jens_raw_data/Survival_Summary_1_1.csv)
 
 #### Survival plot: 
 
@@ -177,11 +202,11 @@ The survival table can be found here:
 
 ## Metadata Mergin:
 
-To identify and explore the different read counts, metadata related to the readings was merged with the survival tables. The metadata file can be found at [/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Jens Data/metadata_jenclean.csv](). 
+To identify and explore the different read counts, metadata related to the readings was merged with the survival tables. The metadata file can be found at [/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Jens Data/metadata_jenclean.csv](/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Jens Data/metadata_jenclean.csv). 
 
 ### Zero Count Samples:
 
-[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/high_read_samples_merged_meta_1_1.csv]():
+[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/high_read_samples_merged_meta_1_1.csv](/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/high_read_samples_merged_meta_1_1.csv):
 
 | Sample_ID               | Station_treatment | Filter_Type |
 | ----------------------- | ----------------- | ----------- |
@@ -195,7 +220,7 @@ To identify and explore the different read counts, metadata related to the readi
 
 ### Low Count Samples (<1000 reads) (HEAD):
 
-[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/low_read_samples_merged_meta_1_1.csv]()
+[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/low_read_samples_merged_meta_1_1.csv](/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/low_read_samples_merged_meta_1_1.csv)
 
 | Sample_ID               | nonchim | Station_treatment | Filter_Type |
 | ----------------------- | ------- | ----------------- | ----------- |
@@ -208,7 +233,7 @@ To identify and explore the different read counts, metadata related to the readi
 
 ### Mid count samples (<10000, >1000) (HEAD)
 
-[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/medium_read_samples_merged_meta_1_1.csv]()
+[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/medium_read_samples_merged_meta_1_1.csv](/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/medium_read_samples_merged_meta_1_1.csv)
 
 | Sample_ID          | nonchim | Station_treatment | Filter_Type |
 | ------------------ | ------- | ----------------- | ----------- |
@@ -220,7 +245,7 @@ To identify and explore the different read counts, metadata related to the readi
 | 1337_176_S176_L001 | 5649    | Themo-2           | 11_um       |
 
 ### High count samples (>10000 reads)(HEAD):
-[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/high_read_samples_merged_meta_1_1.csv]()
+[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/high_read_samples_merged_meta_1_1.csv](/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/high_read_samples_merged_meta_1_1.csv)
 
 | Sample_ID               | nonchim | Station_treatment | Filter_Type |
 | ----------------------- | ------- | ----------------- | ----------- |
@@ -238,7 +263,7 @@ Removed reads 45, 104, 241.
 ## Survival table analysis: 
  
 The survival table can be found here:
-[/Users/carlosmartinez/Documents/Jens_raw_data/Survival_carlos_5_5.csv]()
+[/Users/carlosmartinez/Documents/Jens_raw_data/Survival_carlos_5_5.csv](/Users/carlosmartinez/Documents/Jens_raw_data/Survival_carlos_5_5.csv)
 
 #### Survival summary:
 
@@ -253,19 +278,19 @@ The survival table can be found here:
 | High_Reads   | 243   |
 | Total_Reads  | 301   |
 
-[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/read_counts_summary_5_5.csv]()
+[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/read_counts_summary_5_5.csv](/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/read_counts_summary_5_5.csv)
 
 
 | Step             | Total_Reads | Percentage_Retained |
 | ---------------- | ----------- | ------------------- |
 | Input            | 10873577    | 100                 |
-| Filtered         | 9296536     | 85.4965758          |
-| Denoised Forward | 9045462     | 83.1875472          |
-| Denoised Reverse | 9110316     | 83.7839839          |
-| Merged           | 6224052     | 57.240152           |
-| Non-Chimeric     | 6001218     | 55.1908355          |
+| Filtered         | 9296536     | 85.50               |
+| Denoised Forward | 9045462     | 83.19               |
+| Denoised Reverse | 9110316     | 83.78               |
+| Merged           | 6224052     | 57.24               |
+| Non-Chimeric     | 6001218     | 55.19               |
 
-[/Users/carlosmartinez/Documents/Jens_raw_data/Survival_Summary_1_1.csv]()
+[/Users/carlosmartinez/Documents/Jens_raw_data/Survival_Summary_1_1.csv](/Users/carlosmartinez/Documents/Jens_raw_data/Survival_Summary_1_1.csv)
 
 #### Survival plot: 
 
@@ -273,30 +298,99 @@ The survival table can be found here:
 
 ## Metadata Mergin:
 
-To identify and explore the different read counts, metadata related to the readings was merged with the survival tables. The metadata file can be found at [/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Jens Data/metadata_jenclean.csv](). 
+To identify and explore the different read counts, metadata related to the readings was merged with the survival tables. The metadata file can be found at [/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Jens Data/metadata_jenclean.csv](/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Jens Data/metadata_jenclean.csv). 
 
 ### Zero Count Samples:
 
-[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/high_read_samples_merged_meta_5_5.csv]()
+[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/high_read_samples_merged_meta_5_5.csv](/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/high_read_samples_merged_meta_5_5.csv)
 
 ### Low Count Samples (reads < 1000):
 
-[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/low_read_samples_merged_meta_5_5.csv]()
+[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/low_read_samples_merged_meta_5_5.csv](Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/low_read_samples_merged_meta_5_5.csv)
 
 ### Mid count samples (1000 > reads < 10000)
 
-[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/medium_read_samples_merged_meta_5_5.csv]()
+[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/medium_read_samples_merged_meta_5_5.csv](/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/medium_read_samples_merged_meta_5_5.csv)
 
 
 ### High count samples (reads > 1000):
-[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/high_read_samples_merged_meta_5_5.csv]()
+[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/high_read_samples_merged_meta_5_5.csv](/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/high_read_samples_merged_meta_5_5.csv)
+
+# Other Quality Explorations
+## Q = truncQ(2) + (MaxEE = (1,1)
+
+Will discard all the sequences in which there was at least one read with the probability of erroneous base assignment of 63%
+
+![](/Users/carlosmartinez/Documents/Jens_raw_data/Read_length_1_1_Q2.png)
+
+## Q = truncQ(13) + (MaxEE = (1,1)
+
+Will discard all the sequences in which there was at least one read with the probability of erroneous base assignment of 5%, an additional sample (**188, from pollution cruise did not pass the filter**)
+
+### Read Length Distribution:
+
+![](/Users/carlosmartinez/Documents/Jens_raw_data/read_len_dist_1_1_Q13.png)
+
+## Q = truncQ(2) + (MaxEE = (5,5)
+Will discard all the sequences in which there was at least one read with the probability of erroneous base assignment of 38%
+![](/Users/carlosmartinez/Documents/Jens_raw_data/read_len_dist_5_5_Q2.png)
+
+## Survival table analysis: 
+ 
+The survival table can be found here:
+[/Users/carlosmartinez/Documents/Jens_raw_data/Survival_carlos_1_1_Q13.csv](/Users/carlosmartinez/Documents/Jens_raw_data/Survival_carlos_1_1_Q13.csv)
+
+#### Survival summary:
+
+[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/read_counts_summary_1_1_Q13.csv](/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/read_counts_summary_1_1_Q13.csv)
+
+* Low reads <= 1000
+* High reads >= 10000
 
 
+| Category     | Count |
+| ------------ | ----- |
+| Zero_Reads   | 9     |
+| Low_Reads    | 20    |
+| Medium_Reads | 159   |
+| High_Reads   | 110   |
+| Total_Reads  | 298   |
 
 
+[/Users/carlosmartinez/Documents/Jens_raw_data/Survival_Summary_1_1_Q13.csv](/Users/carlosmartinez/Documents/Jens_raw_data/Survival_Summary_1_1_Q13.csv)
+
+| Step             | Total_Reads | Percentage_Retained |
+| ---------------- | ----------- | ------------------- |
+| Input            | 10873333    | 100                 |
+| Filtered         | 3828495     | 35.21               |
+| Denoised Forward | 3680913     | 33.85               |
+| Denoised Reverse | 3719028     | 34.20               |
+| Merged           | 2704997     | 24.88               |
+| Non-Chimeric     | 2612170     | 24.02               |
+
+#### Survival plot: 
+
+![](/Users/carlosmartinez/Documents/Jens_raw_data/read_count_dist_1_1_Q13.png)
+
+## Metadata Mergin:
+
+To identify and explore the different read counts, metadata related to the readings was merged with the survival tables. The metadata file can be found at [/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Jens Data/metadata_jenclean.csv](/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Jens Data/metadata_jenclean.csv). 
+
+### Zero Count Samples:
+
+[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/zero_read_samples_merged_meta_1_1_Q13.csv](/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/zero_read_samples_merged_meta_1_1_Q13.csv)
+
+### Low Count Samples (reads < 1000):
+
+[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/low_read_samples_merged_meta_1_1_Q13.csv](/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/low_read_samples_merged_meta_1_1_Q13.csv)
+
+### Mid count samples (1000 > reads < 10000)
+
+[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/medium_read_samples_merged_meta_1_1_Q13.csv](/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/medium_read_samples_merged_meta_1_1_Q13.csv)
 
 
-
+### High count samples (reads > 1000):
+[/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/high_read_samples_merged_meta_1_1_Q13.csv](/Users/carlosmartinez/Documents/Jens_raw_data/survival_tables/high_read_samples_merged_meta_1_1_Q13.csv)
 
 
 
