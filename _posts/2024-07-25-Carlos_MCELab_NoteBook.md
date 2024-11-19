@@ -800,3 +800,28 @@ To reassess the efficiency of the PPS pump.
 - Complete the experimental design for the diffusion chamber apparatus.  
 - Order 142 mm 0.22 micron filters to perform the experiments.
 
+# Marine Chemical Ecology (MCE) Lab Notebook  
+#Date: 15/10/2024  
+**Location:** IOLR  
+**Objective:** Due to renovation plans, Clear room -3 of IOLR from MCE equipment.   
+**Activity:** Move all MCE equipment in IOLR floor -3 to floor +5.
+
+**Details:**  
+- Moved DCS and PPS into Eyal Rikhav Offices in IOLR
+- Moved Tools and spare parts to "Fridge room" in floor +5
+
+**Future Actions:**  
+- Setup the DCS chamber experiment in the new conditions
+
+# Marine Chemical Ecology (MCE) Lab Notebook  
+#Date: 19/11/2024  
+**Location:** IOLR  
+**Objective:** Restablish operations with DCS and PPS   
+**Activity:** Move DCS elecronics and PPS pump from IOLR to MCE
+**Details:**  
+- Moved DCS and prepare for shipping to USA for repairs
+- Moved PPS pump for inspection and replacement of spare parts
+
+**Future Actions:**  
+- Change PPS spare parts
+- Inspect old parts and compare wear to new parts
