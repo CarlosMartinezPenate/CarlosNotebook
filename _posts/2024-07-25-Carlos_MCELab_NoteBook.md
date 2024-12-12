@@ -817,11 +817,71 @@ To reassess the efficiency of the PPS pump.
 #Date: 19/11/2024  
 **Location:** IOLR  
 **Objective:** Restablish operations with DCS and PPS   
-**Activity:** Move DCS elecronics and PPS pump from IOLR to MCE
+**Activity:** Move DCS electronics and PPS pump from IOLR to MCE
 **Details:**  
-- Moved DCS and prepare for shipping to USA for repairs
+- Moved DCS and prepared for shipping to USA for repairs
 - Moved PPS pump for inspection and replacement of spare parts
 
 **Future Actions:**  
 - Change PPS spare parts
 - Inspect old parts and compare wear to new parts
+
+# Marine Chemical Ecology (MCE) Lab Notebook  
+
+## Date: 19/11/2024  
+**Location:** MCELab  
+**Objective:** Fixing DCS's Electronics  
+**Activity:** Prepare the electronics for shipping  
+
+**Details:**  
+- Reassembled electronics and took pictures, then packed and prepared them for shipping.  
+
+**Future Actions:**  
+- Wait for McLane Labs to send details about the repairs.  
+
+---
+
+## Date: 20/11/2024  
+**Location:** MCELab  
+**Objective:** Inspect old parts and compare wear to new parts  
+**Activity:** Disassemble PPS pump and document wear  
+
+**Details:**  
+- The PPS pump was disassembled, and pictures were taken to compare the old parts with the new spare parts received.  
+- Significant wear was observed in the old parts compared to the new ones.  
+- The manufacturer was contacted, and pictures were sent. They corroborated that the wear could be the cause of primer loss.  
+- The pump was reassembled and stored for future replacement of the parts.  
+
+**Future Actions:**  
+- Replace the old parts with the new ones.  
+
+---
+
+## Date: 11/12/2024  
+**Location:** MCELab  
+**Objective:** Replace spare parts of the PPS pump  
+**Activity:** Disassemble the pump and extract the old silicon seal  
+
+**Details:**  
+- The silicon seal was "stuck" on the pump, and it took some time to extract it.  
+- It was not possible to remove the seal without damaging it, though it is not supposed to be reused.  
+- The seal was extracted using plastic toothpicks to avoid damaging the metal parts.  
+- The pump was stored for cleaning and future reassembly with the new parts.  
+
+**Future Actions:**  
+- Clean the pump and replace parts.  
+
+---
+
+## Date: 12/12/2024  
+**Location:** MCELab  
+**Objective:** Replace spare parts of the PPS pump  
+**Activity:** Clean and reassemble the pump with new parts  
+
+**Details:**  
+- The pump was cleaned using DW40 and compressed air.  
+- All pump parts were replaced with the new spare parts after cleaning.  
+- The pump was reassembled for future testing and calibration at IOLR.  
+
+**Future Actions:**  
+- Test and calibrate the pump at IOLR.  
