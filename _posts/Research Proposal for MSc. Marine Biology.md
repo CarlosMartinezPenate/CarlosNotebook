@@ -14,6 +14,13 @@ In this context, understanding and monitoring the microbial communities prevalen
 
 Recent studies have utilized various methods to monitor oil pollution's effects on marine organisms. [Ferreira et al, (2021)](Ferreira, Nícollas Menezes, Ricardo Coutinho, and Louisi Souza de Oliveira. 2023. “Emerging Studies on Oil Pollution Biomonitoring: A Systematic Review.” Marine Pollution Bulletin 192 (July): 115081. https://doi.org/10.1016/j.marpolbul.2023.115081.) conducted a systematic review of 390 studies focusing on oil pollution monitoring over the past decade. This review revealed that while most methods employed short-term studies, combining biomarker and bioaccumulation analyses emerged as the most frequently adopted strategy. Additionally, ‘omics’ approaches, such as genomics, transcriptomics, and metatranscriptomics, are increasingly used to understand microbial community responses to pollution.
 
+Because it is impossible or difficult to culture most of the environmental microorganisms [[Vandera, et al. 2017.](/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Relevant references/978-3-319-42801-7_2.pdf)] molecular biological tools are often used to study pollutant biodegradation processes. 
+
+"The biodegradation of hydro- carbon pollutants in coastal environments represents one of the most challenging scenarios. It involves the presence of multiple chemical structures, varying with the contamination source, as well as dynamic environmental conditions that influence the structure and function of the involved microbial communities.
+"
+
+
+
 An accurate picture of microbial processes in situ is crucial for understanding the marine ecosystem’s response to oil pollution. Traditional sampling methods, where water samples are collected at depth and brought to the surface for analysis, often subject microorganisms to stress, resulting in altered physiological states and changes in gene expression profiles. [Edgcomb, et al. (2016)](/Users/carlosmartinez/Documents/Scholaship BIO/Vampire/Relevant references/Automatic samplers/1-s2.0-S0967064514002975-main.pdf) explored the impact of sample collection methods on microbial communities, comparing traditional Niskin bottle sampling with in-situ preservation techniques. Their findings suggested that in-situ sampling techniques, such as the Microbial Sampler–In Situ Incubation Device (MS-SID), offer a more accurate reflection of microbial gene expression, as it reduces the stress that microorganisms experience during sample recovery.
 
 
