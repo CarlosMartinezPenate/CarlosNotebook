@@ -885,3 +885,17 @@ To reassess the efficiency of the PPS pump.
 
 **Future Actions:**  
 - Test and calibrate the pump at IOLR.  
+
+---
+## Date: 11/3/2025
+
+**Location:** MCELab
+**Objective:** Documenting the arrival of DCS's Electornics
+**Activity:** Receiving The DCS's electronics 
+**Details:** 
+- The electronics where packed on 19/11/2024 to be repaired
+- McLane acknowledged detecting a sleep current trouble in the board that was causing capacitors to overheat and smoke and burn. 
+
+**Future Actions:**
+- Reinstall electronics and pump and test in IOLR
+
