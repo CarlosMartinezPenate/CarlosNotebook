@@ -899,3 +899,158 @@ To reassess the efficiency of the PPS pump.
 **Future Actions:**
 - Reinstall electronics and pump and test in IOLR
 
+## Marine Chemical Ecology (MCE) Lab Notebook
+
+---
+
+### Date: 08/04/2025  
+**Location:** IOLR  
+**Objective:** Reinstall PPS Pump and Replace Filter Holder  
+
+**Activities:**  
+- Reinstalled the PPS pump.  
+- Changed the inline filter as a preventive measure.  
+- Old filter (left) and new filter (right) visually compared and disassembled into three parts.  
+- No significant damage observed in the old filter.  
+
+**Observations:**  
+- The pump initially worked but began making noise.  
+- Eventually stopped working in both directions.  
+- Upon inspection, no internal damage was found.  
+- Discovered that the outlet hose was being constrained by the instrument's weight, likely causing the malfunction.  
+- Once cleared, the pump worked normally in both directions.  
+
+**Accuracy Test:**  
+- Conducted 5 forward runs (100 mL @ 125 mL/min): each took 48 seconds, reporting 98.6 mL on the interface.  
+- Measured volumes: 98.5, 98.9, 98.7, 99.6, and 99.0 mL.  
+- Reverse direction was significantly less accurate, delivering only ~75 mL instead of 100 mL.  
+
+**Next Steps:**  
+- A 25 mm filter for the pump's filter holder is needed
+- Consider reinstalling updated software for improved reverse mode.  
+- Proceed with reinstalling the filter holders.  
+
+---
+
+### Date: 09/04/2025  
+**Location:** IOLR  
+**Objective:** Test DCS Electronics and Prepare for Peripheral Testing  
+
+**Activities:**  
+- DCS electronics powered up and tested.  
+- Communications with the DCS confirmed functional.  
+- Electronics and battery housing reinstalled in the DCS main frame.  
+- All peripherals connected in preparation for functionality testing.  
+
+---
+
+### Date: 22/04/2025  
+**Location:** IOLR  
+**Objective:** Long-Term Power Test for DCS + Injector Testing  
+
+**Activities:**  
+- DCS computer was left connected to its battery since 09/04/2025.  
+- Successfully woke up and communicated without issue.  
+- Injector 1 and Injector 2 tested by drawing 200 mL at 100 mL/min — both performed with no issues or leaks.  
+- One diffusion chamber was connected to the system for future tests.  
+
+**Next Steps:**  
+- Test communication between DCS and PPS.  
+
+---
+
+### Date: 29/04/2025  
+**Location:** IOLR  
+**Objective:** Evaluate Communication Link Between DCS and PPS  
+
+**Activities:**  
+- Reviewed physical communication ports: both DCS and PPS have one 5-pin Fischer-style port.  
+- Challenge: once connected DCS ↔ PPS, no free port remains for PC connection.  
+- Recognized that scripts must be preloaded to the DCS.  
+- Identified existing debug cable with 5-pin Fischer to DB9 Master/Slave (possibly usable for DCS-only testing).  
+
+**Decision:**  
+- Postpone live communication test.  
+- Plan to create and upload a test script using `SLAVECOM` commands to control the PPS (100 mL forward and reverse @ 125 mL/min).  
+
+---
+
+### Date: 29/04/2025  
+**Location:** IOLR  
+**Objective:** Clean Diffusion Chamber and Prepare for Breathing Test  
+
+**Activities:**  
+- Selected and cleaned one diffusion chamber.  
+- Identified a broken plastic bulkhead compression fitting inside one drilled port (for breathing system hose).  
+- The internal threaded body of the fitting remains embedded; no plastic is visible externally.  
+- Hose was removed successfully.  
+
+**Next Steps:**  
+- Acquire a micro screw extractor (easy-out) to remove the embedded fitting.  
+- Replace with a new plastic bulkhead fitting (approx. 5 mm OD hose compatibility).  
+- Resume scripting and assembly for future breathing cycle test.  
+- Replace the broken plastic fastener that keeps the DCSs 3-way valve in place
+
+---
+### Date: 06/05/2025  
+**Location:** IOLR  
+**Objective:** Restore and Assemble a Fully Functional Diffusion Chamber  
+
+**Activities:**  
+- Successfully removed embedded plastic bulkhead compression fitting using a Hanson EX-3 (5/32") screw extractor.  
+- Inspected the internal mesh supports for membrane holders under binocular microscope; observed wear on fibers and some salt deposits.  
+- Cleaned all diffusion chamber parts with diluted soapy water, including polycarbonate rings, membranes, mesh supports, O-rings, body caps, and chamber cylinders.  
+- Replaced worn plastic fasteners (possibly PVC or nylon) with stainless steel socket cap screws (10/32 NF × 3/4", 316 SS) for improved durability.  
+- Reassembled chamber completely, including:  
+  - Four mesh supports (two per side)  
+  - Two polycarbonate rings  
+  - Two membrane filters  
+  - Two main chamber cylinders  
+  - Central ring with four drilled ports (breathing + tubing)  
+  - Four O-rings (two central, two terminal)  
+  - Kynar breathing bag (inserted during assembly)  
+  - Two end caps and three longitudinal columns  
+  - 18 total pegs (now primarily 316 stainless steel with hex heads)  
+
+**Result:**  
+- Diffusion chamber fully reassembled, cleaned, and now field-ready for deployment or connection to DCS system.  
+- Photos of damaged mesh and final assembly taken for documentation.
+
+**Next Steps:**  
+- Proceed with uploading and testing the SLAVECOM script on the DCS.  
+- Verify PPS ↔ DCS communication using debug cable and Fischer connectors.  
+- Run a short pumping test using the assembled diffusion chamber in the full system.
+
+### Date: 06/05/2025  
+**Location:** IOLR  
+**Objective:** Test Communication and Script Upload Between DCS and PPS  
+
+**Activities:**  
+
+ **Communication Verification**  
+- Connected PC to PPS using McLaneTerm interface.  
+- Entered manual mode (`3`), set valve to Port 0 (`1`).  
+- Activated programmable pump mode (`7`) to test:  
+  - 200 mL @ 125 mL/min (min 100 mL), direction: **forward**  
+  - 200 mL @ 125 mL/min (min 100 mL), direction: **reverse**  
+- **Successful pump activation and priming confirmed.**
+
+**Script Upload Attempts (DCS)**  
+- Drafted `main.txt` script to:  
+  - Wake PPS, rotate to Port 0, run forward/reverse pump cycles, log data  
+  - Initiate with `SLEEP UNTIL` delay  
+- Attempted upload via McLaneTerm → **failed (no XMODEM support)**  
+- Installed `motocrossml.exe` and reassigned COM port to COM1 → **transfer triggered**, but:  
+  - `main.txt` **not visible in `DIR`**  
+  - No PPS behavior confirming script execution  
+  - Suspected partial/failed upload; communication partially blocked during test
+
+**Script Execution & Clock Issue**  
+- Observed ambiguous PPS response, likely due to **incomplete script upload**  
+- Regained manual control via McLaneTerm after reboot  
+- Verified that `main.txt` was **not saved**, suggesting upload failure or discard
+
+**Work Interrupted**  
+- All testing **halted due to asbestos hazard alert**  
+- Equipment safely disconnected  
+- Workspace must be cleared before the next test cycle
