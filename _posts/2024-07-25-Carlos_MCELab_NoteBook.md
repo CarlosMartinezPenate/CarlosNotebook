@@ -1054,3 +1054,65 @@ To reassess the efficiency of the PPS pump.
 - All testing **halted due to asbestos hazard alert**  
 - Equipment safely disconnected  
 - Workspace must be cleared before the next test cycle
+# Marine Chemical Ecology (MCE) Lab Notebook  
+
+## Date: 24/11/2025  
+**Location:** IOLR  
+**Objective:** Resume Work After Workspace Clearance & Prepare System Handover to Next MCELab Candidate  
+**Activity:** Verify equipment integrity and prepare PPS/DCS systems for project halt and transition  
+
+**Details:**  
+- IOLR working space was cleared and made safe for work after the asbestos hazard alert.  
+- Project will be halted and passed on to the next MCELab candidate; system integrity was verified for transition.  
+- All hoses were inspected and labeled for clarity.  
+- Filter holders were stored in **assembled** condition for protection and ease of future use.  
+- AA battery was removed from the PPS computer to prevent further corrosion.  
+
+**Equipment Condition:**  
+- **PPS antifouling bag:**  
+  - Found heavily corroded.  
+  - Now leaking and requires replacement.  
+  - One antifouling bag was replaced today.  
+- **Slave communication cables:**  
+  - Corroded; may require replacement or redesign.  
+  - Consider adding an additional port to allow **real-time 3-way control** (Computer ↔ PPS ↔ DCS).  
+
+**Future Actions:**  
+- **Tomorrow:**  
+  - Perform PPS pump test.  
+  - Conduct DCS communication test.  
+- Explore best practices for **long-term storage** of PPS, DCS, and peripheral components.  
+- Document recommendations for the next project owner.
+
+# Marine Chemical Ecology (MCE) Lab Notebook  
+
+## Date: 26/11/2025  
+
+**Location:** MCELab & IOLR  
+**Objective:** Secure and organize PPS/DCS equipment after relocation; protect electronics (“brains”) for long-term storage  
+**Activity:** Transfer, wrapping, and preliminary storage organization of PPS/DCS systems  
+
+**Details:**  
+- Retrieved the DCS and PPS electronic control boards (“brains”) from IOLR and transported them to the MCELab for safe long-term storage.  
+- Each board was individually wrapped in bubble wrap and placed inside temporary plastic bins to prevent physical damage during transit.  
+- Identified need for follow-up improvements:  
+  - Cleaning of the boards (dust/salt residue)  
+  - Transfer to antistatic bags  
+  - Addition of desiccant packs  
+  - Replacement of temporary bins with sturdier, ESD-safe containers  
+- At IOLR, wrapped and secured remaining PPS/DCS mechanical components, including:  
+  - Diffusion chamber parts  
+  - Spare parts (metal and plastic)  
+  - Breathing bags  
+  - Filter holder accessories  
+  - Hoses and fittings  
+- Ensured equipment within each storage box was protected with plastic wrap or bubble wrap to prevent damage during the upcoming storage period.  
+
+**Observations:**  
+- All electronics were successfully transferred without incident.  
+- Mechanical components are now consolidated and wrapped, but require re-sorting and labeling for final long-term storage.  
+
+**Future Actions:**  
+- Clean electronics and repackage into antistatic bags with silica gel.  
+- Replace temporary bins with sturdier, rigid containers.  
+- Label and finalize the layout of the PPS/DCS mechanical storage boxes.  
